@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+
+    <!--BOOTSTRAP-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+    <!-- JQUERY-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+    <div id="background">
+
+        <!--HEADER-->
+        <div id="Header" class="row" style="width:100%; margin:auto;height:400px;background-color:rgb(247,118,184)">
+            <div id="upperHeader">
+                <div id="cloudBackground">
+                    <!--<img src="..\LinksIcons\cloud_services-2300x1278.webp" alt="FirstCloud" width="400" height="340px"
+                         style="position: relative
+                         top: 0;
+                         left:50%;
+                         opacity:0.5">-->
+                </div>
+                <div id="switchDayNight">
+                    <span class="dot" onmouseover="ShowDark()"
+                          style="position: fixed;
+                             top: 70px;
+                             left: 50px;
+                             background-color: rgb(23,185,222);
+                              border-radius: 50%;
+                              display: inline-block;
+                              height: 150px;
+                              width: 150px">
+                    </span>
+
+                    <img src="..\LinksIcons\toggle-button-5636879-4698549.webp" onmouseover="ShowDark()" onmouseleave="ShowLight()" alt="Switch Day/night" width="150" height="140"
+                         style="position: fixed;
+                         top: 80px;
+                         left: 50px">
+                </div>
+                <div id="HamburgerMenu">
+                    <span id="dotBurgerMenu" class="dot" onmouseover="ShowMoody()"
+                          style="position: fixed;
+                             top: 70px;
+                             right: 50px;
+                             background-color: rgb(23,185,222);
+                              border-radius: 50%;
+                              display: inline-block;
+                              height: 150px;
+                              width: 150px">
+                    </span>
+
+                    <img src="..\LinksIcons\sunny-weather-3321876-2775239.png" onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="SunnyCloud" width="150" height="140"
+                         style="position: fixed;
+                         top: 70px;
+                         right: 50px;
+                         display:block">
+                    <img src="..\LinksIcons\lightning-at-night-3321897-2775260.png"  alt="MoodyCloud" width="150" height="140"
+                         style="position: fixed;
+                         top: 70px;
+                         right: 50px;
+                         display: none">
+                </div>
+            </div>
+            <div id="Title" Style="text-align:center;
+                                   font-family: Sunny Spells;
+                                    color:white;
+                                    position:relative;
+                                    top: 100px">
+                <h1 style="font-size: 130px">Naomie</h1>
+                <h2 style="font-size: 60px">L'Archevêque-Carrière</h2>
+            </div>
+        </div>
+
+        <!--BODY-->
+        <div id="Body" class="row">
+            <div id="left" class="column"></div>
+            <div id="center" class="column" style="width: 90%;margin:auto;
+            background-color:rgb(254,203,227);padding-bottom:150px;height:100%">
+                <div id="smallDescription" class="row" Style="text-align:center;
+                                   font-family: arial;
+                                    color:white;
+                                    position:relative;
+                                    top: 50px;
+                                    font-size: 15px">
+                    <!--<span id="behindDescription" class="dot"
+                              style="top: 50px;
+                                 background-color: rgb(23,185,222);
+                                  border-radius: 30%;
+                                  display: inline-block;
+                                  height: 500px;
+                                  width: 500px">
+                    </span>-->
+                    <div id="objectDescript">
+                        <p>Hello there! Welcome to my own personal website!</p>
+                        <p>Continue scrolling to see all my social media accounts.</p>
+                        <p>On the upper left side of this website you'll find a switch.</p>
+                        <p>This allows you to go from dark to light mode, and vice versa.</p>
+                        <p>On the other side you'll find a cloud.</p>
+                        <p>If you click on it you'll be able to see the other pages of my website.</p>
+                        <p>Thank you and enjoy! :)</p>
+                    </div>
+                </div>
+
+                <div id="insta" class="row">
+                    <div class="column" id="PotatoInsta">
+                        <img src="..\LinksIcons\cool-potato-6509354-5376846.webp" alt="PotIn" width="300" height="280"
+                             style="position: relative;
+                            top: 70px;
+                            left: 200px">
+                    </div>
+                    <div class="column" id="TextInsta"></div>
+                </div>
+
+                <div id="github" class="row">
+                    <div class="column" id="PotatoGit">
+                        <img src="..\LinksIcons\genius-potato-6509350-5376842.webp" alt="PotGi" width="300" height="280"
+                             style="position: relative;
+                            top: 70px;
+                            right: 70px;
+                            left: 1000px;
+                            -webkit-transform: scaleX(-1);
+                            transform: scaleX(-1)">
+                    </div>
+                    <div class="column" id="TextGit"></div>
+                </div>
+
+                <div id="linkedin" class="row">
+                    <div class="column" id="PotatoLinke">
+                        <img src="..\LinksIcons\happy-potato-6509352-5376844.webp" alt="PotIn" width="300" height="280"
+                             style="position: relative;
+                            top: 70px;
+                            left: 200px">
+                    </div>
+                    <div class="column" id="TextLinke"></div>
+                </div>
+
+                <div id="pinterest" class="row">
+                    <div class="column" id="PotatoPinte">
+                        <img src="..\LinksIcons\sleeping-potato-6509341-5376833.webp" alt="PotGi" width="300" height="280"
+                             style="position: relative;
+                            top: 70px;
+                            right: 70px;
+                            left: 1000px;
+                            -webkit-transform: scaleX(-1);
+                            transform: scaleX(-1)">
+                    </div>
+                    <div class="column" id="TextPinte"></div>
+                </div>
+
+                <div id="youtube" class="row">
+                    <div class="column" id="PotatoYoutu">
+                        <img src="..\LinksIcons\dancing-potato-6509346-5376838.webp" alt="PotIn" width="300" height="280"
+                             style="position: relative;
+                            top: 70px;
+                            left: 200px">
+                    </div>
+                    <div class="column" id="TextYoutu"></div>
+                </div>
+
+                <div id="facebook" class="row">
+                    <div class="column" id="PotatoFb">
+                        <img src="..\LinksIcons\karate-potato-6509349-5376841.webp" alt="PotGi" width="300" height="280"
+                             style="position: relative;
+                            top: 70px;
+                            right: 70px;
+                            left: 1000px;
+                            -webkit-transform: scaleX(-1);
+                            transform: scaleX(-1)">
+                    </div>
+                    <div class="column" id="TextFb"></div>
+                </div>
+            </div>
+            <div id="right" class="column">
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+      function ShowMoody(){
+          var imgSun = document.querySelector('img[alt="SunnyCloud"]');
+          imgSun.style.display = "none";
+          var imgMoody = document.querySelector('img[alt="MoodyCloud"]');
+          imgMoody.style.display = "block";
+          var nodes=document.getElementsByClassName("dot");
+            for (let i=0;i<nodes.length;i++){
+                if(i===1){
+                    nodes[i].style.backgroundColor = "rgb(18,93,110)";
+                }
+            }
+      }
+
+      function ShowSunny(){
+          var imgSun = document.querySelector('img[alt="SunnyCloud"]');
+          imgSun.style.display = "block";
+          var imgMoody = document.querySelector('img[alt="MoodyCloud"]');
+          imgMoody.style.display = "none";
+          var nodes=document.getElementsByClassName("dot");
+            for (let i=0;i<nodes.length;i++){
+                if(i===1){
+                    nodes[i].style.backgroundColor = "rgb(23,185,222)";
+                }
+            }
+      }
+      function ShowDark(){
+          var nodes=document.getElementsByClassName("dot");
+            for (let i=0;i<nodes.length;i++){
+                if(i===0){
+                    nodes[i].style.backgroundColor = "rgb(18,93,110)";
+                }
+            }
+      }
+
+      function ShowLight(){
+          var nodes=document.getElementsByClassName("dot");
+            for (let i=0;i<nodes.length;i++){
+                if(i===0){
+                    nodes[i].style.backgroundColor = "rgb(23,185,222)";
+                }
+            }
+      }
+    </script>
+</body>
+</html>
