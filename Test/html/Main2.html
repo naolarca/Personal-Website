@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Home</title>
 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -13,32 +14,83 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
-    <div id="background">
+    <div id="background" style="max-width:100%">
 
         <!--HEADER-->
-        <div id="Header" class="row" style="width:100%; margin:auto;height:400px;background-color:rgb(247,118,184)">
-            <div id="upperHeader">
-                <div id="cloudBackground">
-                    <!--<img src="..\LinksIcons\cloud_services-2300x1278.webp" alt="FirstCloud" width="400" height="340px"
-                         style="position: relative
+        <div id="Header" class="row" style="max-width:100%;width:100%; margin:auto;height:400px;background-color:rgb(247,118,184)">
+            <div id="upperHeader" style="max-width:100%">
+                <img src="..\LinksIcons\cloud-3485493-2918606.webp" alt="Cloud0" width="600" height="440px"
+                     style="position: absolute;
+                         top: -100px;
+                         left:60%;
+                         opacity:0.6">
+                <img src="..\LinksIcons\cloud-3485493-2918606.webp" alt="Cloud0" width="600" height="440px"
+                     style="position: absolute;
+                         top: 50px;
+                         left:0%;
+                         opacity:0.6">
+                <img src="..\LinksIcons\cloud-3485493-2918606.webp" alt="Cloud0" width="600" height="440px"
+                     style="position: absolute;
+                         top: -150px;
+                         left:25%;
+                         opacity:0.6">
+                <img src="..\LinksIcons\cloud-3825101-3202857.webp" alt="Cloud4" width="300" height="200px"
+                     style="position: absolute;
+                         top: 300px;
+                         left:10%;
+                         opacity:1">
+                <img src="..\LinksIcons\cloud_services-2300x1278.webp" alt="Cloud1" width="900" height="440px"
+                         style="position: absolute;
                          top: 0;
-                         left:50%;
-                         opacity:0.5">-->
-                </div>
+                         left:35%;
+                         opacity:1">
+                <img src="..\LinksIcons\cloud_services-2300x1278.webp" alt="Cloud1" width="900" height="440px"
+                         style="position: absolute;
+                         top: -90px;
+                         left:10%;
+                         opacity:1">
+                <img src="..\LinksIcons\cloud_services-2300x1278.webp" alt="Cloud1" width="900" height="440px"
+                     style="position: absolute;
+                         top: 10px;
+                         left:-20%;
+                         opacity:1">
+
+
+                <img src="..\LinksIcons\cloud-3485493-2918606.webp" alt="Cloud0" width="600" height="440px"
+                     style="position: absolute;
+                         top: 120px;
+                         left:60%;
+                         opacity:1">
+                <img src="..\LinksIcons\cloud-3026719-2526665.webp" alt="Cloud2" width="500" height="440px"
+                     style="position: absolute;
+                         top: -150px;
+                         left:67%;
+                         opacity:1">
+                <img src="..\LinksIcons\cloud-3026719-2526665.webp" alt="Cloud2" width="500" height="440px"
+                     style="position: absolute;
+                         top: -120px;
+                         left:5%;
+                         opacity:1">
+                <img src="..\LinksIcons\cloud-3879403-3230712@0.webp" alt="Cloud3" width="800" height="640px"
+                     style="position: absolute;
+                         top: 190px;
+                         left:22%;
+                         opacity:0.8">
 
             </div>
             <div id="Title" Style="text-align:center;
                                    font-family: Sunny Spells;
                                     color:white;
-                                    position:relative;
-                                    top: 100px">
+                                    position:absolute;
+                                    top: 100px;
+                                    left:35%">
                 <h1 style="font-size: 130px">Naomie</h1>
                 <h2 style="font-size: 60px">L'Archevêque-Carrière</h2>
             </div>
         </div>
 
         <!--BODY-->
-        <div id="Body" class="row">
+        <div id="Body" class="row" style="max-width:100%">
             <div id="left" class="column"></div>
             <div id="center" class="column" style="width: 90%;margin:auto;
                                     background-color:rgb(254,203,227);
@@ -54,9 +106,9 @@
                                     font-weight: bold">
                         <p>Hello there! Welcome to my own personal website!</p>
                         <p>Continue scrolling to see all my social media accounts.</p>
-                        <p>On the upper left side of this website you'll find a switch.</p>
-                        <p>This allows you to go from dark to light mode, and vice versa.</p>
-                        <p>On the other side you'll find a cloud.</p>
+                        <p>On the upper left side of this website you'll find a switch</p>
+                        <p>with a blue dot. This allows you to go from dark to light mode.</p>
+                        <p>On the other side you'll find a cloud in a blue dot.</p>
                         <p>If you click on it you'll be able to see the other pages of my website.</p>
                         <p>Thank you and enjoy! :)</p>
                 </div>
@@ -354,10 +406,10 @@
 
                 <!--BOUTONS HEADER-->
                 <div id="switchDayNight">
-                    <span class="dot" onmouseover="ShowDark()"
+                    <span class="dot" onmouseover="ShowDark()" onclick="DarkLightMode()"
                           style="position: fixed;
-                             top: 70px;
-                             left: 50px;
+                             top: 30px;
+                             left: 100px;
                              background-color: rgb(23,185,222);
                               border-radius: 50%;
                               display: inline-block;
@@ -365,16 +417,16 @@
                               width: 150px">
                     </span>
 
-                    <img src="..\LinksIcons\toggle-button-5636879-4698549.webp" onmouseover="ShowDark()" onmouseleave="ShowLight()" alt="Switch Day/night" width="150" height="140"
+                    <img src="..\LinksIcons\toggle-button-5636879-4698549.webp" onclick="DarkLightMode()" onmouseover="ShowDark()" onmouseleave="ShowLight()" alt="Switch Day/night" width="150" height="140"
                          style="position: fixed;
-                         top: 80px;
-                         left: 50px">
+                         top: 40px;
+                         left: 100px">
                 </div>
                 <div id="HamburgerMenu">
                     <span id="dotBurgerMenu" class="dot" onmouseover="ShowMoody()"
                           style="position: fixed;
-                             top: 70px;
-                             right: 50px;
+                             top: 30px;
+                             right: 130px;
                              background-color: rgb(23,185,222);
                               border-radius: 50%;
                               display: inline-block;
@@ -384,13 +436,13 @@
 
                     <img src="..\LinksIcons\sunny-weather-3321876-2775239.png" onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="SunnyCloud" width="150" height="140"
                          style="position: fixed;
-                         top: 70px;
-                         right: 50px;
+                         top: 30px;
+                         right: 130px;
                          display:block">
                     <img src="..\LinksIcons\lightning-at-night-3321897-2775260.png"  alt="MoodyCloud" width="150" height="140"
                          style="position: fixed;
-                         top: 70px;
-                         right: 50px;
+                         top: 30px;
+                         right: 130px;
                          display: none">
                 </div>
     </div>
@@ -421,6 +473,31 @@
                 }
             }
       }
+
+      function DarkLightMode(){
+        var bg = document.getElementById("background");
+        var ct = document.getElementById("center");
+        var hd = document.getElementById("Header");
+        if(bg.style.backgroundColor==="black"){
+            ct.style.backgroundColor="rgb(254,203,227)";
+            hd.style.backgroundColor="rgb(247,118,184)";
+            bg.style.backgroundColor="white";
+            var nodes=document.getElementsByTagName("p");
+                for (let i=0;i<nodes.length;i++){
+                        nodes[i].style.color = "white";
+                }
+        }
+        else{
+            ct.style.backgroundColor="rgb(29,41,53)";
+            hd.style.backgroundColor="rgb(29,41,53)";
+            bg.style.backgroundColor="black";
+            var nodes=document.getElementsByTagName("p");
+                for (let i=0;i<nodes.length;i++){
+                        nodes[i].style.color = "white";
+                }
+        }
+      }
+
       function ShowDark(){
           var nodes=document.getElementsByClassName("dot");
             for (let i=0;i<nodes.length;i++){
@@ -542,6 +619,8 @@
                 }
             }
       }
+
+
     </script>
 </body>
 </html>
