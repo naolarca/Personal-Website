@@ -403,6 +403,31 @@
 
             </div>
         </div>
+                <!--MENUUUUUUU: IS SHOWN ONLY IF HAMBURGER MENU BUTTON IS CLICKED-->
+                <div id="menu" style="display:none">
+                    <svg width="800" height="100vh" style="position:fixed; top:0px; right:0px">
+                        <rect x="50" y="0" width="800" height="100vh"
+                              style="fill:blue;opacity:0.5;position:fixed; top:0px; right:0px" />
+                    </svg>
+
+                    <ul id="listMenu" style="position:absolute; top:200px; right:300px">
+
+                        <img src="..\LinksIcons\home-6332707-5209353.webp" alt="Home Icon" width="100" height="110" style="border-radius:30px">
+                        <button type="button" class="btn btn-outline-primary btn-lg" href="Main.html">HOME</button><br><br><br>
+                        <img src="..\LinksIcons\resume-5527385-4623366.webp" alt="CV Icon" width="100" height="110" style="border-radius:30px">
+                        <button type="button" class="btn btn-outline-primary btn-lg" href="AboutMe.html">ABOUT ME</button><br><br><br>
+                        <img src="..\LinksIcons\art-4048712-3369794.webp" alt="Art Icon" width="100" height="110" style="border-radius:30px">
+                        <button type="button" class="btn btn-outline-primary btn-lg" href="Portfolio.html">PORTFOLIO</button><br><br><br>
+                        <img src="..\LinksIcons\books-5706113-4756523.webp" alt="Books Icon" width="100" height="110" style="border-radius:30px">
+                        <button type="button" class="btn btn-outline-primary btn-lg" href="Books.html">BOOKS</button><br><br><br>
+                        <img src="..\LinksIcons\online-blog-5842029-4897960.webp" alt="Blog Icon" width="100" height="110" style="border-radius:30px">
+                        <button type="button" class="btn btn-outline-primary btn-lg" href="Blog.html">BLOG</button><br><br><br>
+                        <img src="..\LinksIcons\preview.png" alt="Computer Icon" width="100" height="110" style="border-radius:30px">
+                        <button type="button" class="btn btn-outline-primary btn-lg" href="Projects.html">PROJECTS</button><br><br><br>
+                        <img src="..\LinksIcons\8c4c49963b22882ed15e9de4e9ebd392.png" alt="Earth Icon" width="100" height="110" style="border-radius:30px">
+                        <button type="button" class="btn btn-outline-primary btn-lg" href="Travel.html">TRAVEL</button><br><br><br>
+                    </ul>
+                </div>
 
                 <!--BOUTONS HEADER-->
                 <div id="switchDayNight">
@@ -427,8 +452,9 @@
                          left: 100px;
                          display:none">
                 </div>
-                <div id="HamburgerMenu">
-                    <span id="dotBurgerMenu" class="dot" onmouseover="ShowMoody()"
+
+                <div id="HamburgerMenu" onclick="showMenu()">
+                    <span id="dotBurgerMenu" class="dot" onmouseover="ShowMoody()" onclick="showMenu()"
                           style="position: fixed;
                              top: 30px;
                              right: 130px;
@@ -477,6 +503,15 @@
                     nodes[i].style.backgroundColor = "rgb(23,185,222)";
                 }
             }
+      }
+
+      function showMenu(){
+          var men = document.getElementById("menu");
+          if(men.style.display==="none"){
+            men.style.display="block";
+          }else{
+            men.style.display="none";
+          }
       }
 
       function DarkLightMode(){
