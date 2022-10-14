@@ -18,7 +18,7 @@
 
         <!--HEADER-->
         <div id="Header" class="row" style="max-width:100%;width:100%; margin:auto;height:400px;background-color:rgb(247,118,184)">
-            <div id="upperHeader" style="max-width:100%">
+            <div id="upperHeader" style="max-width:100%;margin:auto">
                 <img src="..\LinksIcons\cloud-3485493-2918606.webp" alt="Cloud0" width="600" height="440px"
                      style="position: absolute;
                          top: -100px;
@@ -111,7 +111,7 @@
                     <p>On the upper left side of this website you'll find a blue</p>
                     <p>dot with a switch. This allows you to change from dark to light mode.</p>
                     <p>On the other side you'll find a cloud in a blue dot.</p>
-                    <p>If you click on it you'll be able to see the other pages of my website.</p>
+                    <p>If you click on it, you'll be able to see the other pages of my website.</p>
                     <p>Thank you and enjoy! :)</p>
                 </div>
 
@@ -194,7 +194,7 @@
                             font-family: Sunny Spells;
                             font-size: 40px;
                             text-align:center">
-                        <p>Visit my github page</p>
+                        <p>Visit my gitHub page</p>
                         <p>where you'll find some really</p>
                         <p>cool projects!</p>
                     </div>
@@ -341,7 +341,7 @@
                             font-family: Sunny Spells;
                             font-size: 40px;
                             text-align:center">
-                        <p>You can also check out my youtube channel</p>
+                        <p>You can also check out my YouTube channel</p>
                         <p>right here. There's not much right now,</p>
                         <p>but I promise I have many projects in mind for </p>
                         <p>the near future!</p>
@@ -454,7 +454,7 @@
 
         <!--BOUTONS HEADER-->
         <div id="switchDayNight">
-            <span class="dot" onmouseover="ShowDark()" onclick="DarkLightMode()"
+            <span class="dot" onclick="DarkLightMode()" onmouseover="ShowDark()" onmouseleave="ShowLight"
                   style="position: fixed;
                        top: 30px;
                        left: 100px;
@@ -464,11 +464,11 @@
                        height: 150px;
                        width: 150px">
             </span>
-            <img src="..\LinksIcons\toggle-button-4794652-4004159.webp" onclick="DarkLightMode()" onmouseover="ShowDark()" onmouseleave="ShowLight()" alt="SwitchNight" width="150" height="140"
+            <img src="..\LinksIcons\sunny-weather-3321876-2775239.png" onclick="DarkLightMode()" onmouseover="ShowDark()" onmouseleave="ShowLight()" alt="SwitchNight" width="150" height="140"
                          style="position: fixed;
                          top: 40px;
                          left: 100px">
-            <img src="..\LinksIcons\toggle-button-5825158-4854967.webp" onclick="DarkLightMode()" onmouseover="ShowDark()" onmouseleave="ShowLight()" alt="SwitchDay" width="150" height="140"
+            <img src="..\LinksIcons\lightning-at-night-3321897-2775260.png" onclick="DarkLightMode()"  onmouseover="ShowDark()" onmouseleave="ShowLight()" alt="SwitchDay" width="150" height="140"
                          style="position: fixed;
                          top: 40px;
                          left: 100px;
@@ -487,12 +487,12 @@
                               width: 150px">
             </span>
 
-            <img src="..\LinksIcons\sunny-weather-3321876-2775239.png" onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="SunnyCloud" width="150" height="140"
+            <img src="..\LinksIcons\burger-5781952-4848498.webp" onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="SunnyCloud" width="150" height="140"
                          style="position: fixed;
                          top: 30px;
                          right: 130px;
                          display:block">
-            <img src="..\LinksIcons\lightning-at-night-3321897-2775260.png"  alt="MoodyCloud" width="150" height="140"
+            <img src="..\LinksIcons\burger-4416051-3663867.webp"  onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="MoodyCloud" width="150" height="140"
                          style="position: fixed;
                          top: 30px;
                          right: 130px;
@@ -503,28 +503,54 @@
     <script>
       function ShowMoody(){
           var imgSun = document.querySelector('img[alt="SunnyCloud"]');
-          imgSun.style.display = "none";
           var imgMoody = document.querySelector('img[alt="MoodyCloud"]');
-          imgMoody.style.display = "block";
-          var nodes=document.getElementsByClassName("dot");
+
+          var men = document.getElementById("menu");
+          if(men.style.display==="none"){
+            imgSun.style.display = "none";
+            imgMoody.style.display = "block";
+            var nodes=document.getElementsByClassName("dot");
             for (let i=0;i<nodes.length;i++){
                 if(i===7){
                     nodes[i].style.backgroundColor = "rgb(18,93,110)";
                 }
             }
-      }
-
-      function ShowSunny(){
-          var imgSun = document.querySelector('img[alt="SunnyCloud"]');
-          imgSun.style.display = "block";
-          var imgMoody = document.querySelector('img[alt="MoodyCloud"]');
-          imgMoody.style.display = "none";
-          var nodes=document.getElementsByClassName("dot");
+          }else{
+            imgSun.style.display = "block";
+            imgMoody.style.display = "none";
+            var nodes=document.getElementsByClassName("dot");
             for (let i=0;i<nodes.length;i++){
                 if(i===7){
                     nodes[i].style.backgroundColor = "rgb(23,185,222)";
                 }
             }
+          }
+
+      }
+
+      function ShowSunny(){
+          var imgSun = document.querySelector('img[alt="SunnyCloud"]');
+          var imgMoody = document.querySelector('img[alt="MoodyCloud"]');
+          var nodes=document.getElementsByClassName("dot");
+          var men = document.getElementById("menu");
+
+          if(men.style.display==="block"){
+            imgSun.style.display = "none";
+            imgMoody.style.display = "block";
+            for (let i=0;i<nodes.length;i++){
+                if(i===7){
+                    nodes[i].style.backgroundColor = "rgb(18,93,110)";
+                }
+            }
+          }else{
+            imgSun.style.display = "block";
+            imgMoody.style.display = "none";
+            for (let i=0;i<nodes.length;i++){
+                if(i===7){
+                    nodes[i].style.backgroundColor = "rgb(23,185,222)";
+                }
+            }
+          }
       }
 
       function showMenu(){
@@ -540,8 +566,11 @@
         var bg = document.getElementById("background");
         var ct = document.getElementById("center");
         var hd = document.getElementById("Header");
+
         var sn = document.querySelector('img[alt="SwitchNight"]');
         var sd = document.querySelector('img[alt="SwitchDay"]');
+
+        var dotes=document.getElementsByClassName("dot");
 
         if(bg.style.backgroundColor==="black"){
             ct.style.backgroundColor="rgb(254,203,227)";
@@ -550,10 +579,18 @@
 
             sn.style.display="block";
             sd.style.display="none";
+
             var nodes=document.getElementsByTagName("p");
                 for (let i=0;i<nodes.length;i++){
                         nodes[i].style.color = "black";
                 }
+
+                for (let j=0;j<dotes.length;j++){
+                    if(j===6||j===7){
+                        dotes[j].style.backgroundColor = "rgb(23,185,222)";
+                    }
+                }
+
         }
         else{
             ct.style.backgroundColor="rgb(29,41,53)";
@@ -566,26 +603,75 @@
                 for (let i=0;i<nodes.length;i++){
                         nodes[i].style.color = "white";
                 }
+
+                for (let j=0;j<dotes.length;j++){
+                    if(j===6||j===7){
+                        dotes[j].style.backgroundColor = "rgb(18,93,110)";
+                    }
+                }
         }
       }
 
-      function ShowDark(){
+      function ShowLight(){
+
+          var sn = document.querySelector('img[alt="SwitchNight"]');
+          var sd = document.querySelector('img[alt="SwitchDay"]');
           var nodes=document.getElementsByClassName("dot");
-            for (let i=0;i<nodes.length;i++){
-                if(i===6){
-                    nodes[i].style.backgroundColor = "rgb(18,93,110)";
+          var bg = document.getElementById("background");
+
+          if(bg.style.backgroundColor==="white"){
+                  sn.style.display="block";
+                  sd.style.display="none";
+
+                for (let i=0;i<nodes.length;i++){
+                    if(i===6){
+                        nodes[i].style.backgroundColor = "rgb(23,185,222)";
+                    }
                 }
-            }
+          }else{
+            sn.style.display="none";
+                  sd.style.display="block";
+
+                for (let i=0;i<nodes.length;i++){
+                    if(i===6){
+                        nodes[i].style.backgroundColor = "rgb(18,93,110)";
+                    }
+                }
+          }
+
+
+
       }
 
-      function ShowLight(){
+      function ShowDark(){
+
+          var bg = document.getElementById("background");
+          var sn = document.querySelector('img[alt="SwitchNight"]');
+          var sd = document.querySelector('img[alt="SwitchDay"]');
           var nodes=document.getElementsByClassName("dot");
+
+          if(bg.style.backgroundColor==="black"){
+            sn.style.display="block";
+            sd.style.display="none";
             for (let i=0;i<nodes.length;i++){
                 if(i===6){
                     nodes[i].style.backgroundColor = "rgb(23,185,222)";
                 }
             }
+          }else{
+            sn.style.display="none";
+            sd.style.display="block";
+
+            for (let i=0;i<nodes.length;i++){
+                if(i===6){
+                    nodes[i].style.backgroundColor = "rgb(18,93,110)";
+                }
+            }
+          }
+
       }
+
+
 
       function instagram(){
           var nodes=document.getElementsByClassName("dot");
