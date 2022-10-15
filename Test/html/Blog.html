@@ -6,6 +6,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- FONT AWESOME-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -14,26 +17,30 @@
     <!-- JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+
 
 </head>
 <body>
-<!--COMMON-->
-<div id="div1">
-    <script>
-            $("#div1").load("Common.html");
+<!-- Main Container -->
+<div id="container">
+    <!-- An aside -->
+    <!-- This is for holding the 3D object -->
+    <div id="aSide" style="width:700px; height:800px">
+        <!-- 3D objsect -->
+        <!-- This inserts the 3D object inside the aside container -->
+        <model-viewer style="width:700x; height:800px" src="../3D/Charact/scene.gltf" alt="Charact" auto-rotate camera-controls ar ios-src="../3D/Charact/scene.gltf"></model-viewer>
+    </div>
+
+    <!--COMMON-->
+    <div id="common" class="row">
+        <script>
+            $("#common").load("Common.html");
         </script>
-</div>
-
-<div id="background" style="background-color:#ffecb3;height:100vh">
-
-    <!--WEB PAGE BODY-->
-    <div class = "container" style="text-align:center;width: 1000px;margin: auto;background-color:white;padding-bottom:150px">
-        <!--HEADER-->
-        <div class="row" id="header">
-            <h1 style="color:#dcab7b;font-family:cursive"> <strong>Blog</strong></h1>
-        </div>
     </div>
 </div>
-
 </body>
 </html>

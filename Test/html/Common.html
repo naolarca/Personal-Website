@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <title>Common</title>
 
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <!--BOOTSTRAP-->
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -11,69 +12,134 @@
 
   <!-- JQUERY-->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-
 </head>
 <body>
+<!--MENUUUUUUU: IS SHOWN ONLY IF HAMBURGER MENU BUTTON IS CLICKED-->
+<div id="menu" style="display:none">
+  <svg width="800" height="100vh" style="position:fixed; top:0px; right:0px">
+    <rect x="50" y="0" width="800" height="100vh"
+          style="fill:rgb(178,42,236);opacity:0.7;position:fixed; top:0px; right:0px" />
+  </svg>
+  <div id="listMenu" style="position:absolute; top:200px; right:300px">
+    <img src="..\LinksIcons\home-6332707-5209353.webp" alt="Home Icon" width="100" height="110" style="border-radius:30px">
+    <a href="Main2.html">
+      <button class="btn btn-light btn-lg" role="button">HOME</button>
+    </a><br>
+    <img src="..\LinksIcons\resume-5527385-4623366.webp" alt="CV Icon" width="100" height="110" style="border-radius:30px">
+    <a href="AboutMe.html">
+      <button role="button" class="btn btn-light btn-lg">ABOUT ME</button>
+    </a><br>
+    <img src="..\LinksIcons\art-4048712-3369794.webp" alt="Art Icon" width="100" height="110" style="border-radius:30px">
+    <a href="Portfolio.html">
+      <button role="button" class="btn btn-light btn-lg">PORTFOLIO</button>
+    </a><br>
+    <img src="..\LinksIcons\books-5706113-4756523.webp" alt="Books Icon" width="100" height="110" style="border-radius:30px">
+    <a href="Books.html">
+      <button role="button" class="btn btn-light btn-lg">BOOKS</button>
+    </a><br>
+    <img src="..\LinksIcons\online-blog-5842029-4897960.webp" alt="Blog Icon" width="100" height="110" style="border-radius:30px">
+    <a href="Blog.html">
+      <button role="button" class="btn btn-light btn-lg">BLOG</button>
+    </a><br>
+    <img src="..\LinksIcons\preview.png" alt="Computer Icon" width="100" height="110" style="border-radius:30px">
+    <a href="Projects.html">
+      <button role="button" class="btn btn-light btn-lg">PROJECTS</button>
+    </a><br>
+    <img src="..\LinksIcons\8c4c49963b22882ed15e9de4e9ebd392.png" alt="Earth Icon" width="100" height="110" style="border-radius:30px">
+    <a href="Travel.html">
+      <button role="button" class="btn btn-light btn-lg">TRAVEL</button>
+    </a>
+  </div>
+</div>
 
-  <div id="center" class="column" style="background-color:#b1c176">
-    <!-- CHEVRON DOWN-->
-    <div id="buttonShow" style="display: block; position:absolute; right:40px; top:30px">
-      <svg onmouseover="ShowHide()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-double-down" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M1.646 6.646a.5.5 0 0 1 .708 0L8 12.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-        <path fill-rule="evenodd" d="M1.646 2.646a.5.5 0 0 1 .708 0L8 8.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
-      </svg>
-    </div>
+<!--BOUTONS HEADER-->
 
-    <!--CHEVRON UP-->
-    <div id="buttonHide" style="display: none; position:absolute; right:40px; top:30px">
-      <svg onmouseover="ShowHide()" xmlns="http://www.w3.org/2000/svg" width="40" height="40" fill="currentColor" class="bi bi-chevron-double-up" viewBox="0 0 16 16">
-        <path fill-rule="evenodd" d="M7.646 2.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 3.707 2.354 9.354a.5.5 0 1 1-.708-.708l6-6z"/>
-        <path fill-rule="evenodd" d="M7.646 6.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 7.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
-      </svg>
-    </div>
 
-    <!-- FUNCTION SHOW/HIDE NAV BAR-->
-    <script>
-      function ShowHide(){
+<div id="HamburgerMenu" onclick="showMenu()">
+            <span id="dotBurgerMenu" class="dot" onmouseover="ShowMoody()" onclick="showMenu()"
+                  style="position: fixed;
+                             top: 30px;
+                             right: 130px;
+                             background-color: rgb(23,185,222);
+                              border-radius: 50%;
+                              display: inline-block;
+                              height: 150px;
+                              width: 150px">
+            </span>
 
-        var nav = document.getElementById("navigation");
-        if (nav.style.display === "none") {
-          nav.style.display = "block";
-          document.getElementById("buttonHide").style.display = "block";
-          document.getElementById("buttonShow").style.display = "none";
-        } else {
-         nav.style.display = "none";
-         document.getElementById("buttonHide").style.display = "none";
-         document.getElementById("buttonShow").style.display = "block";
+  <img src="..\LinksIcons\burger-5781952-4848498.webp" onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="SunnyCloud" width="150" height="140"
+       style="position: fixed;
+                         top: 30px;
+                         right: 130px;
+                         display:block">
+  <img src="..\LinksIcons\burger-4416051-3663867.webp"  onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="MoodyCloud" width="150" height="140"
+       style="position: fixed;
+                         top: 30px;
+                         right: 130px;
+                         display: none">
+</div>
+<script>
+      function ShowMoody(){
+          var imgSun = document.querySelector('img[alt="SunnyCloud"]');
+          var imgMoody = document.querySelector('img[alt="MoodyCloud"]');
 
-        }
+          var men = document.getElementById("menu");
+          if(men.style.display==="none"){
+            imgSun.style.display = "none";
+            imgMoody.style.display = "block";
+            var nodes=document.getElementsByClassName("dot");
+            for (let i=0;i<nodes.length;i++){
+                if(i===7){
+                    nodes[i].style.backgroundColor = "rgb(18,93,110)";
+                }
+            }
+          }else{
+            imgSun.style.display = "block";
+            imgMoody.style.display = "none";
+            var nodes=document.getElementsByClassName("dot");
+            for (let i=0;i<nodes.length;i++){
+                if(i===7){
+                    nodes[i].style.backgroundColor = "rgb(23,185,222)";
+                }
+            }
+          }
+
       }
-    </script>
 
-    <!--NAVIGATION BAR-->
-    <div id="navigation" style="background-color:#b1c176;display: none;" class="container">
-      <nav class="navbar navbar-default">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <a class="navbar-brand" href="Main.html">NAOMIE L'ARCHEVEQUE-CARRIERE</a>
-          </div>
-          <ul class="nav navbar-nav">
-            <li class="active"><a href="Main.html">Home</a></li>
-            <li><a href="AboutMe.html">ABOUT ME</a></li>
-            <li><a href="Portfolio.html">PORTFOLIO</a></li>
-            <li><a href="Books.html">BOOKS</a></li>
-            <li><a href="Blog.html">BLOG</a></li>
-            <li><a href="Projects.html">PROJECTS</a></li>
-            <li><a href="Travel.html">TRAVEL</a></li>
-          </ul>
-        </div>
-      </nav>
-    </div>
-  </div>
+      function ShowSunny(){
+          var imgSun = document.querySelector('img[alt="SunnyCloud"]');
+          var imgMoody = document.querySelector('img[alt="MoodyCloud"]');
+          var nodes=document.getElementsByClassName("dot");
+          var men = document.getElementById("menu");
 
-  <div id="background2" class="column" style = "background-color:#b1c176">
+          if(men.style.display==="block"){
+            imgSun.style.display = "none";
+            imgMoody.style.display = "block";
+            for (let i=0;i<nodes.length;i++){
+                if(i===7){
+                    nodes[i].style.backgroundColor = "rgb(18,93,110)";
+                }
+            }
+          }else{
+            imgSun.style.display = "block";
+            imgMoody.style.display = "none";
+            for (let i=0;i<nodes.length;i++){
+                if(i===7){
+                    nodes[i].style.backgroundColor = "rgb(23,185,222)";
+                }
+            }
+          }
+      }
 
-  </div>
+      function showMenu(){
+          var men = document.getElementById("menu");
+          if(men.style.display==="none"){
+            men.style.display="block";
+          }else{
+            men.style.display="none";
+          }
+      }
+</script>
 
 </body>
 </html>

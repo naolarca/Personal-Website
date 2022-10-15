@@ -1,0 +1,11 @@
+Model Information:
+* title:	Cactus Cute Character
+* source:	https://sketchfab.com/3d-models/cactus-cute-character-381b0df79040422da9b8ae439620fa90
+* author:	kyantoran (https://sketchfab.com/kyantoran)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Cactus Cute Character" (https://sketchfab.com/3d-models/cactus-cute-character-381b0df79040422da9b8ae439620fa90) by kyantoran (https://sketchfab.com/kyantoran) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)

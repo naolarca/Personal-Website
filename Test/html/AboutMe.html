@@ -5,6 +5,9 @@
     <title>About me</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
+    <!-- FONT AWESOME-->
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
     <!--BOOTSTRAP-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
@@ -13,25 +16,99 @@
     <!-- JQUERY-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 
-
+    <!--Imports a model-viewer JavaScript code -->
+    <!--It helps to handle how the 3D Object would be displayed -->
+    <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+    <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
 </head>
 <body>
-    <!--COMMON-->
-    <div id="div1">
-        <script>
-                $("#div1").load("Common.html");
-        </script>
-    </div>
+    <!-- Main Container -->
+    <div id="background" style="max-width:100%">
 
-    <div id="background" style="background-color:#ffecb3;height:100vh">
-
-        <!--WEB PAGE BODY-->
-        <div class = "container" style="text-align:center;width: 1000px;margin: auto;background-color:white;padding-bottom:150px">
-            <!--HEADER-->
-            <div class="row" id="header">
-                <h1 style="color:#dcab7b;font-family:cursive"> <strong>About me</strong></h1>
+        <!--HEADER-->
+        <div id="Header" class="row" style="max-width:100%;width:100%; margin:auto;height:400px;background-color:rgb(40,123,64)">
+            <div id="upperHeader" style="max-width:100%;margin:auto">
+                <!-- An aside -->
+                <!-- This is for holding the 3D object -->
+                <div id="aSide1" style="position:absolute; left:10%; width:300px; height:350px">
+                    <!-- 3D objsect -->
+                    <!-- This inserts the 3D object inside the aside container -->
+                    <model-viewer style="width:700x; height:350px" src="../3D/Charact/scene.gltf" alt="Charact" auto-rotate camera-controls ar ios-src="../3D/Charact/scene.gltf"></model-viewer>
+                </div>
+                <div id="Title" Style="text-align:center;
+                                   font-family: Sunny Spells;
+                                    color:white;
+                                    position:absolute;
+                                    top: 100px;
+                                    left:35%">
+                    <h1 style="font-size: 130px">ABOUT ME</h1>
+                </div>
+                <!--<div id="aSide2" style="position:absolute; left:70%; width:300px; height:350px">-->
+                    <!-- 3D objsect -->
+                    <!-- This inserts the 3D object inside the aside container -->
+                    <!--<model-viewer style="width:700x; height:350px" src="../3D/Cactus/scene.gltf" alt="Cactus" auto-rotate camera-controls ar ios-src="../3D/Cactus/scene.gltf"></model-viewer>
+                </div>-->
             </div>
+        </div>
+
+        <!--BODY-->
+        <div id="Body" class="row" style="max-width:100%">
+            <div id="left" class="column">
+
+            </div>
+            <div id="center" class="column" style="width: 90%;margin:auto;
+                                    background-color:rgb(173,195,115);
+                                    padding-bottom:150px;
+                                    height:100vh">
+                <div id="FirstColumn" class="column">
+                    <div id="ProfilePic">
+
+                    </div>
+                    <div id="Name">
+
+                    </div>
+                    <div id="ContactInfo">
+
+                    </div>
+                    <div id="Skills">
+
+                    </div>
+                </div>
+                <div id="SecondColumn" class="column">
+                    <div id="Statement">
+
+                    </div>
+                    <div id="Education">
+
+                    </div>
+                    <div id="Internships">
+
+                    </div>
+                    <div id="Projects">
+
+                    </div>
+                    <div id="PersonalAchievements">
+
+                    </div>
+                    <div id="OtherExperiences">
+
+                    </div>
+                    <div id="Volunteering">
+
+                    </div>
+                </div>
+            </div>
+            <div id="right" class="column">
+
+            </div>
+        </div>
+
+        <!--COMMON-->
+        <div id="common" class="row">
+            <script>
+            $("#common").load("Common.html");
+        </script>
         </div>
     </div>
 </body>

@@ -1,0 +1,11 @@
+Model Information:
+* title:	Book - Vertex chameleon study
+* source:	https://sketchfab.com/3d-models/book-vertex-chameleon-study-51b0b3bdcd844a9e951a9ede6f192da8
+* author:	Oleaf (https://sketchfab.com/homkahom0)
+
+Model License:
+* license type:	CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)
+* requirements:	Author must be credited. No commercial use.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Book - Vertex chameleon study" (https://sketchfab.com/3d-models/book-vertex-chameleon-study-51b0b3bdcd844a9e951a9ede6f192da8) by Oleaf (https://sketchfab.com/homkahom0) licensed under CC-BY-NC-4.0 (http://creativecommons.org/licenses/by-nc/4.0/)

@@ -89,6 +89,7 @@
             </div>
         </div>
 
+
         <!--BODY-->
         <div id="Body" class="row" style="max-width:100%">
             <div id="left" class="column">
@@ -109,8 +110,8 @@
                     <p>Hello there! Welcome to my own personal website!</p>
                     <p>Continue scrolling to see all my social media accounts.</p>
                     <p>On the upper left side of this website you'll find a blue</p>
-                    <p>dot with a switch. This allows you to change from dark to light mode.</p>
-                    <p>On the other side you'll find a cloud in a blue dot.</p>
+                    <p>dot with a cloud. This allows you to change from dark to light mode.</p>
+                    <p>On the other side you'll find a burger in a blue dot.</p>
                     <p>If you click on it, you'll be able to see the other pages of my website.</p>
                     <p>Thank you and enjoy! :)</p>
                 </div>
@@ -414,43 +415,6 @@
 
             </div>
         </div>
-        <!--MENUUUUUUU: IS SHOWN ONLY IF HAMBURGER MENU BUTTON IS CLICKED-->
-        <div id="menu" style="display:none">
-            <svg width="800" height="100vh" style="position:fixed; top:0px; right:0px">
-                <rect x="50" y="0" width="800" height="100vh"
-                      style="fill:rgb(178,42,236);opacity:0.7;position:fixed; top:0px; right:0px" />
-            </svg>
-            <div id="listMenu" style="position:absolute; top:200px; right:300px">
-                <img src="..\LinksIcons\home-6332707-5209353.webp" alt="Home Icon" width="100" height="110" style="border-radius:30px">
-                <a href="Main2.html">
-                    <button class="btn btn-light btn-lg" role="button">HOME</button>
-                </a><br>
-                <img src="..\LinksIcons\resume-5527385-4623366.webp" alt="CV Icon" width="100" height="110" style="border-radius:30px">
-                <a href="AboutMe.html">
-                    <button role="button" class="btn btn-light btn-lg">ABOUT ME</button>
-                </a><br>
-                <img src="..\LinksIcons\art-4048712-3369794.webp" alt="Art Icon" width="100" height="110" style="border-radius:30px">
-                <a href="Portfolio.html">
-                    <button role="button" class="btn btn-light btn-lg">PORTFOLIO</button>
-                </a><br>
-                <img src="..\LinksIcons\books-5706113-4756523.webp" alt="Books Icon" width="100" height="110" style="border-radius:30px">
-                <a href="Books.html">
-                    <button role="button" class="btn btn-light btn-lg">BOOKS</button>
-                </a><br>
-                <img src="..\LinksIcons\online-blog-5842029-4897960.webp" alt="Blog Icon" width="100" height="110" style="border-radius:30px">
-                <a href="Blog.html">
-                    <button role="button" class="btn btn-light btn-lg">BLOG</button>
-                </a><br>
-                <img src="..\LinksIcons\preview.png" alt="Computer Icon" width="100" height="110" style="border-radius:30px">
-                <a href="Projects.html">
-                    <button role="button" class="btn btn-light btn-lg">PROJECTS</button>
-                </a><br>
-                <img src="..\LinksIcons\8c4c49963b22882ed15e9de4e9ebd392.png" alt="Earth Icon" width="100" height="110" style="border-radius:30px">
-                <a href="Travel.html">
-                    <button role="button" class="btn btn-light btn-lg">TRAVEL</button>
-                </a>
-            </div>
-        </div>
 
         <!--BOUTONS HEADER-->
         <div id="switchDayNight">
@@ -475,92 +439,15 @@
                          display:none">
         </div>
 
-        <div id="HamburgerMenu" onclick="showMenu()">
-            <span id="dotBurgerMenu" class="dot" onmouseover="ShowMoody()" onclick="showMenu()"
-                  style="position: fixed;
-                             top: 30px;
-                             right: 130px;
-                             background-color: rgb(23,185,222);
-                              border-radius: 50%;
-                              display: inline-block;
-                              height: 150px;
-                              width: 150px">
-            </span>
-
-            <img src="..\LinksIcons\burger-5781952-4848498.webp" onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="SunnyCloud" width="150" height="140"
-                         style="position: fixed;
-                         top: 30px;
-                         right: 130px;
-                         display:block">
-            <img src="..\LinksIcons\burger-4416051-3663867.webp"  onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="MoodyCloud" width="150" height="140"
-                         style="position: fixed;
-                         top: 30px;
-                         right: 130px;
-                         display: none">
+        <!--COMMON-->
+        <div id="common" class="row">
+            <script>
+            $("#common").load("Common.html");
+        </script>
         </div>
     </div>
 
     <script>
-      function ShowMoody(){
-          var imgSun = document.querySelector('img[alt="SunnyCloud"]');
-          var imgMoody = document.querySelector('img[alt="MoodyCloud"]');
-
-          var men = document.getElementById("menu");
-          if(men.style.display==="none"){
-            imgSun.style.display = "none";
-            imgMoody.style.display = "block";
-            var nodes=document.getElementsByClassName("dot");
-            for (let i=0;i<nodes.length;i++){
-                if(i===7){
-                    nodes[i].style.backgroundColor = "rgb(18,93,110)";
-                }
-            }
-          }else{
-            imgSun.style.display = "block";
-            imgMoody.style.display = "none";
-            var nodes=document.getElementsByClassName("dot");
-            for (let i=0;i<nodes.length;i++){
-                if(i===7){
-                    nodes[i].style.backgroundColor = "rgb(23,185,222)";
-                }
-            }
-          }
-
-      }
-
-      function ShowSunny(){
-          var imgSun = document.querySelector('img[alt="SunnyCloud"]');
-          var imgMoody = document.querySelector('img[alt="MoodyCloud"]');
-          var nodes=document.getElementsByClassName("dot");
-          var men = document.getElementById("menu");
-
-          if(men.style.display==="block"){
-            imgSun.style.display = "none";
-            imgMoody.style.display = "block";
-            for (let i=0;i<nodes.length;i++){
-                if(i===7){
-                    nodes[i].style.backgroundColor = "rgb(18,93,110)";
-                }
-            }
-          }else{
-            imgSun.style.display = "block";
-            imgMoody.style.display = "none";
-            for (let i=0;i<nodes.length;i++){
-                if(i===7){
-                    nodes[i].style.backgroundColor = "rgb(23,185,222)";
-                }
-            }
-          }
-      }
-
-      function showMenu(){
-          var men = document.getElementById("menu");
-          if(men.style.display==="none"){
-            men.style.display="block";
-          }else{
-            men.style.display="none";
-          }
-      }
 
       function DarkLightMode(){
         var bg = document.getElementById("background");
