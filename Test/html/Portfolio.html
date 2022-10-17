@@ -21,19 +21,154 @@
     <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
     <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
 
-
 </head>
 <body>
 <!-- Main Container -->
-<div id="container">
-    <!-- An aside -->
-    <!-- This is for holding the 3D object -->
-    <div id="aSide" style="width:700px; height:800px">
-        <!-- 3D objsect -->
-        <!-- This inserts the 3D object inside the aside container -->
-        <model-viewer style="width:700x; height:800px" src="../3D/VikingRoom/scene.gltf" alt="Book" auto-rotate camera-controls ar ios-src="../3D/VikingRoom/scene.gltf"></model-viewer>
-    </div>
+<div id="background" style="max-width:100%; background-color:rgb(173,195,115)">
 
+    <!--HEADER-->
+    <!--<div id="Header" class="row" style="max-width:100%;width:100%; margin:auto;height:200px;background-color:rgb(40,123,64)">
+        <div id="upperHeader" style="max-width:100%;margin:auto">
+            <img src="..\BackgroundImage\p333-vd4_tropical_wall_ma.jpg" style="max-height:900px;max-width:100%;width:100%; height:900px;margin:auto;">
+            <div id="Title" Style="text-align:center;
+                                   font-family: 'Inter', sans-serif;;
+                                    color:white;
+                                    position:absolute;
+                                    top: 100px;
+                                    left:25%">
+                <h1 style="font-size: 130px">Portfolio</h1>
+            </div>
+        </div>
+    </div>-->
+
+    <!--BODY-->
+    <div id="Body" class="row" style="max-width:100%;  width: 90%;background-color:white; margin:auto;">
+        <div id="left" class="column">
+
+        </div>
+        <section id="portfolio" class="portfolio section-bg">
+            <div class="container aos-init aos-animate" data-aos="fade-up">
+                <div class="section-title">
+                    <h2>Portfolio</h2>
+                    <p>
+                        Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem.
+                        Sit sint consectetur velit. Quisquam quos quisquam cupiditate.
+                        Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+                <div class="row">
+                    <div class="col-lg-12 d-flex justify-content-center aos-init aos-animate" data-aos="fade-up"
+                         data-aos-delay="100">
+                        <ul id="portfolio-flters"
+                            style="padding: 0;
+                              margin: 0 auto 25px auto;
+                              list-style: none;
+                              text-align: center;
+                              background: #fff;
+                              border-radius: 50px;
+                              padding: 2px 15px;">
+                            <li data-filter="*" class="filter-active"
+                                style="cursor: pointer;
+                                      display: inline-block;
+                                      padding: 10px 15px;
+                                      font-size: 14px;
+                                      font-weight: 600;
+                                      line-height: 1;
+                                      text-transform: uppercase;
+                                      color: #272829;
+                                      margin-bottom: 5px;
+                                      transition: all 0.3s ease-in-out;" >ALL</li>
+                            <li data-filter=".filter-acrylic"
+                                style="cursor: pointer;
+                                      display: inline-block;
+                                      padding: 10px 15px;
+                                      font-size: 14px;
+                                      font-weight: 600;
+                                      line-height: 1;
+                                      text-transform: uppercase;
+                                      color: #272829;
+                                      margin-bottom: 5px;
+                                      transition: all 0.3s ease-in-out;" >Acrylic</li>
+                            <li data-filter=".filter-digital"
+                                style="cursor: pointer;
+                                      display: inline-block;
+                                      padding: 10px 15px;
+                                      font-size: 14px;
+                                      font-weight: 600;
+                                      line-height: 1;
+                                      text-transform: uppercase;
+                                      color: #272829;
+                                      margin-bottom: 5px;
+                                      transition: all 0.3s ease-in-out;" >Digital</li>
+                            <li data-filter=".filter-watercolor"
+                                style="cursor: pointer;
+                                      display: inline-block;
+                                      padding: 10px 15px;
+                                      font-size: 14px;
+                                      font-weight: 600;
+                                      line-height: 1;
+                                      text-transform: uppercase;
+                                      color: #272829;
+                                      margin-bottom: 5px;
+                                      transition: all 0.3s ease-in-out;
+                                      margin-right: 0;" >Watercolor</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="row portfolio-container aos-init aos-animate" data-aos="fade-up" data-aos-delay="200"
+                     style="position: relative;
+                     height: 1507.85px;">
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app"
+                         style="margin-bottom: 30px;
+                         position: absolute;
+                         left: 0px; top: 0px;">
+                        <div class="portfolio-wrap"
+                             style="transition: 0.3s;
+                              position: relative;
+                              overflow: hidden;
+                              z-index: 1;
+                              background: rgba(69, 80, 91, 0.8);">
+                            <img height="500px" src="..\portfolio\311960178_482427196961460_3233749664139419000_n.jpg">
+                            <div class="portfolio-info">
+                                <h4>Acrylic 1</h4>
+                                <p>Acrylic</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4 col-md-6 portfolio-item filter-app"
+                         style="position: absolute; left: 360px; top: 0px;">
+                        <div class="portfolio-wrap"
+                             style="transition: 0.3s;
+                              position: relative;
+                              overflow: hidden;
+                              z-index: 1;
+                              background: rgba(69, 80, 91, 0.8);">
+                            <img height="450px" src="..\portfolio\274237953_311227184326812_4840796971534361082_n.png">
+                            <div class="portfolio-info">
+                                <h4>Digital 1</h4>
+                                <p>Digital</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+    </div>
+    <footer class="ds-footer text-center" style="background-color: #000; padding: 120px 0;">
+        <div class="container">
+            <section style="padding-bottom: 97px; ">
+                        <span
+                                style="color: rgba(255,255,255,0.5);
+                                text-transform: uppercase; font-weight: 700;
+                                font-size: 16px; letter-spacing: 1px;
+                                display: block; padding-bottom: 20px;">Stay in touch</span>
+                <h4 style="color: #FFF; font-size: 48px; font-weight: 700;">Ready to talk?</h4>
+                <p style=" letter-spacing: 1.13px; color: #FFF; font-size: 18px; margin-bottom: 40px; ">Feel free to contact me</p>
+                <a href="mailto:nao15@live.ca" class="ds-button" style=" display: inline-block; text-transform: uppercase;font-size: 12px;line-height: 13px;font-weight: 600;letter-spacing: 3px; color:#F26464; padding:17px 30px;  border: 2px solid #F26464;border-radius: 60px;">Lets Talk</a>
+            </section>
+        </div>
+    </footer>
     <!--COMMON-->
     <div id="common" class="row">
         <script>
@@ -41,6 +176,5 @@
         </script>
     </div>
 </div>
-
 </body>
 </html>

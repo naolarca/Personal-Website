@@ -57,7 +57,7 @@
 
 <div id="HamburgerMenu" onclick="showMenu()">
             <span id="dotBurgerMenu" class="dot" onmouseover="ShowMoody()" onclick="showMenu()"
-                  style="position: fixed;
+                  style="position: absolute;
                              top: 30px;
                              right: 130px;
                              background-color: rgb(23,185,222);
@@ -68,16 +68,24 @@
             </span>
 
   <img src="..\LinksIcons\burger-5781952-4848498.webp" onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="SunnyCloud" width="150" height="140"
-       style="position: fixed;
+       style="position: absolute;
                          top: 30px;
                          right: 130px;
                          display:block">
   <img src="..\LinksIcons\burger-4416051-3663867.webp"  onmouseover="ShowMoody()" onmouseleave="ShowSunny()" alt="MoodyCloud" width="150" height="140"
-       style="position: fixed;
+       style="position: absolute;
                          top: 30px;
                          right: 130px;
                          display: none">
 </div>
+
+<div id="goUpButton">
+  <img src="..\LinksIcons\7733789.png" onclick="GoUp()" alt="GoUp" width="50" height="50"
+       style="position: fixed;
+             bottom: 20px;
+             right: 130px;">
+</div>
+
 <script>
       function ShowMoody(){
           var imgSun = document.querySelector('img[alt="SunnyCloud"]');
@@ -138,6 +146,11 @@
           }else{
             men.style.display="none";
           }
+      }
+
+      function GoUp(){
+          document.body.scrollTop = 0; // For Safari
+          document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
       }
 </script>
 
