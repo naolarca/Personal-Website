@@ -24,81 +24,574 @@
 </head>
 <body>
     <!-- Main Container -->
-    <div id="background" style="max-width:100%">
+    <div id="background" style="max-width:100%; background-color:rgb(173,195,115)">
 
         <!--HEADER-->
-        <div id="Header" class="row" style="max-width:100%;width:100%; margin:auto;height:400px;background-color:rgb(40,123,64)">
+        <div id="Header" class="row" style="max-width:100%;width:100%; margin:auto;height:200px;background-color:rgb(40,123,64)">
             <div id="upperHeader" style="max-width:100%;margin:auto">
-                <!-- An aside -->
-                <!-- This is for holding the 3D object -->
-                <div id="aSide1" style="position:absolute; left:10%; width:300px; height:350px">
-                    <!-- 3D objsect -->
-                    <!-- This inserts the 3D object inside the aside container -->
-                    <model-viewer style="width:700x; height:350px" src="../3D/Charact/scene.gltf" alt="Charact" auto-rotate camera-controls ar ios-src="../3D/Charact/scene.gltf"></model-viewer>
-                </div>
+                <img src="..\BackgroundImage\p333-vd4_tropical_wall_ma.jpg" style="max-height:900px;max-width:100%;width:100%; height:900px;margin:auto;">
                 <div id="Title" Style="text-align:center;
-                                   font-family: Sunny Spells;
+                                   font-family: 'Inter', sans-serif;;
                                     color:white;
                                     position:absolute;
                                     top: 100px;
-                                    left:35%">
+                                    left:25%">
                     <h1 style="font-size: 130px">ABOUT ME</h1>
                 </div>
-                <!--<div id="aSide2" style="position:absolute; left:70%; width:300px; height:350px">-->
-                    <!-- 3D objsect -->
-                    <!-- This inserts the 3D object inside the aside container -->
-                    <!--<model-viewer style="width:700x; height:350px" src="../3D/Cactus/scene.gltf" alt="Cactus" auto-rotate camera-controls ar ios-src="../3D/Cactus/scene.gltf"></model-viewer>
-                </div>-->
             </div>
         </div>
 
         <!--BODY-->
-        <div id="Body" class="row" style="max-width:100%">
+        <div id="Body" class="row" style="max-width:100%;  width: 90%;background-color:white; margin:auto;">
             <div id="left" class="column">
 
             </div>
-            <div id="center" class="column" style="width: 90%;margin:auto;
-                                    background-color:rgb(173,195,115);
+            <!--<div id="center" class="column" style="width: 90%;margin:auto;
+                                    background-color:white;
                                     padding-bottom:150px;
-                                    height:100vh">
-                <div id="FirstColumn" class="column">
-                    <div id="ProfilePic">
-
-                    </div>
-                    <div id="Name">
-
-                    </div>
-                    <div id="ContactInfo">
-
-                    </div>
-                    <div id="Skills">
-
-                    </div>
-                </div>
-                <div id="SecondColumn" class="column">
-                    <div id="Statement">
-
-                    </div>
-                    <div id="Education">
-
-                    </div>
-                    <div id="Internships">
-
-                    </div>
-                    <div id="Projects">
-
-                    </div>
-                    <div id="PersonalAchievements">
-
-                    </div>
-                    <div id="OtherExperiences">
-
-                    </div>
-                    <div id="Volunteering">
-
+                                    height:100vh">-->
+            <div class="ds-banner" style="margin-top: 180px;">
+                <div id="containerBody" class="container">
+                    <div class="row">
+                        <div id="FirstColumn" class="col-12 col-sm-12 col-md-5 col-lg-5 col-xl-5 col-xxl-5">
+                            <figure style="margin: 0 ">
+                                <img src="..\BackgroundImage\ProfilePic.jpg" alt="Profile Pic" width="450" height="450"
+                                     style="max-width: 100%;border: none;outline: none;height: auto;">
+                            </figure>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-7 col-lg-7 col-xl-7 col-xxl-7">
+                            <section style="padding-left: 70px; padding-right: 100px; ">
+                                <h1 style="font-weight: 600; font-size: 48px; line-height: 60px; color: white; font-family: 'Inter', sans-serif;">
+                                    <span style=" display: block;
+                                    text-transform: uppercase;
+                                    letter-spacing: 1px;
+                                    font-weight: 500;
+                                    font-size: 16px;
+                                    padding-bottom: 30px; ">Hi there!</span>
+                                    " I'm Naomie,
+                                    <br>
+                                     A student in Computer Engineering. "
+                                </h1>
+                                <ul class="ds-numbervalulist"
+                                    style="list-style: none;
+                                    display: flex;
+                                    align-items: center;
+                                    flex-wrap: wrap;
+                                    margin: 0;
+                                    padding: 0;
+                                    margin-top: 60px; color:white">
+                                    <li style="margin-right: 60px; ">
+                                        <strong style="display: block; color: #F26464; font-size: 36px; font-weight: 800; ">6+</strong>
+                                        <span style="font-size: 16px; letter-spacing: 1px; "> Work Experience</span>
+                                    </li>
+                                    <li style="margin-right: 60px; ">
+                                        <strong style="display: block; color: #F26464; font-size: 36px; font-weight: 800; ">4+</strong>
+                                        <span style="font-size: 16px; letter-spacing: 1px; ">Projects</span>
+                                    </li>
+                                    <li style="margin-right: 0; ">
+                                        <strong style="display: block; color: #F26464; font-size: 36px; font-weight: 800; ">2</strong>
+                                        <span style="font-size: 16px; letter-spacing: 1px; ">Internships</span>
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <div class="ds-about-section" style="padding-top: 60px; padding-bottom: 120px;">
+                <div class="container">
+                    <section>
+                        <h2 class="ds-heading"
+                            style="display: inline-block;
+                            font-weight: 700; color: #000;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 16px;
+                            border-bottom: 3px solid #F26464;
+                            padding-bottom: 7px; margin-bottom: 23px;
+                            font-family: 'Inter', sans-serif;">ABOUT ME</h2>
+                        <p style="color: #373737; font-size: 24px; line-height: 40px; font-weight: 300; margin-bottom: 60px;">
+                         "Text here...
+                        </p>
+                        <div class="ds-button-sec text-center">
+                            <a href="#" class="ds-button"
+                               style=" display: inline-block;
+                               text-transform: uppercase;
+                               font-size: 12px;line-height: 13px;
+                               font-weight: 600;letter-spacing: 3px;
+                               color:#F26464; padding:17px 30px;
+                               border: 2px solid #F26464;
+                               border-radius: 60px; ">Download Resume</a>
+                        </div>
+                    </section>
+                </div>
+            </div>
+
+            <div class="ds-skills-section" style="padding-bottom: 105px;">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <h2 class="ds-heading"
+                                style="display: inline-block;
+                            font-weight: 700; color: #000;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 16px;
+                            border-bottom: 3px solid #F26464;
+                            padding-bottom: 7px; margin-bottom: 23px;
+                            font-family: 'Inter', sans-serif;">Coding skills</h2>
+                            <ul class="ds-skills-list"
+                                style="list-style: none; padding: 0; margin: 0;
+                                display: flex; flex-wrap: wrap; align-items: center;
+                                margin-top: 11px;">
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    C/C++</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    C#</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    JavaScript</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    Python</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    HTML</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    CSS</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    SQL</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    VBA</li>
+                            </ul>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <h2 class="ds-heading"
+                                style="display: inline-block;
+                            font-weight: 700; color: #000;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 16px;
+                            border-bottom: 3px solid #F26464;
+                            padding-bottom: 7px; margin-bottom: 23px;
+                            font-family: 'Inter', sans-serif;">Other skills</h2>
+                            <ul class="ds-skills-list"
+                                style="list-style: none; padding: 0; margin: 0;
+                                display: flex; flex-wrap: wrap; align-items: center;
+                                margin-top: 11px;">
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    Creative</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    Curious</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    Likes to learn new things</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    Team spirit and collaboration</li>
+                                <li style="display: inline-block; color: #373737; font-size: 16px; padding:10px 20px; background-color: #FFF; border: 1px solid #D7D7D7;
+  border-radius: 27px; margin-right: 15px; margin-bottom: 15px;  font-weight: 500;">
+                                    Active listening and other customer service skills</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-education-section" style="padding-bottom: 120px; ">
+                <div class="container">
+                    <h2 class="ds-heading"
+                        style="display: inline-block;
+                            font-weight: 700; color: #000;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 16px;
+                            border-bottom: 3px solid #F26464;
+                            padding-bottom: 7px; margin-bottom: 23px;
+                            font-family: 'Inter', sans-serif;">Academic Training</h2>
+                    <div class="row ds-experience-list" style="padding-top: 15px;">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section style="padding-right: 70px; font-family: 'Inter', sans-serif;">
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    September 2020 - Present
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    University of Sherbrooke, Sherbrooke (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px;  ">
+                                    Bachelor of Computer Engineering (Co-op Program)
+                                </span>
+
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                     August 2013 - June 2018
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    Collège Mont Notre-Dame, Sherbrooke (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px;  ">
+                                    International High School Diploma
+                                </span>
+
+
+                            </section>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section>
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    September 2018 - May 2020
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    Collégial du Séminaire de Sherbrooke, Sherbrooke (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px; ">
+                                    College Diploma in Natural Sciences
+                                </span>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-experience-section" style="padding-bottom: 120px; ">
+                <div class="container">
+                    <h2 class="ds-heading"
+                        style="display: inline-block;
+                            font-weight: 700; color: #000;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 16px;
+                            border-bottom: 3px solid #F26464;
+                            padding-bottom: 7px; margin-bottom: 23px;
+                            font-family: 'Inter', sans-serif;">Internships</h2>
+                    <div class="row ds-experience-list" style="padding-top: 15px;">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section style="padding-right: 70px; font-family: 'Inter', sans-serif;">
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    January 2020-April 2022
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    Hortau, Saint-Nicolas (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px;  ">
+                                    Embedded Developer Intern
+                                </span>
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 300;"></p>
+                                <ul style="list-style: none; padding: 0; margin: 0; padding-top: 10px; ">
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Maintain and add functionalities (ex.: improve the Bluetooth support) on the firmware (C++ in
+                                        Eclipse) of the main company product: a device with soil tension probes that link to a mobile web
+                                        application, providing growers with real-time field and soil data to help them make decisions
+                                        about irrigation and fertilizer applications.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Develop, design and manage an application with C# in Visual Studio Code to visualize the device
+                                        production of data and help us find other functionalities to add to the product.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Device’s data managed through AWS
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Agile scrum method
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Use of the Jira tool to track projects and use Confluence for documentation.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Managing repositories with Gitlab and Gitkraken.
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section>
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    May 2021-August 2021
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    Martin Gilbert Pharmacien Inc. (Bioscript Solutions), Châteauguay (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px; ">
+                                    Data Analyst Manager Intern
+                                </span>
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 300;"></p>
+                                <ul style="list-style: none; padding: 0; margin: 0; padding-top: 10px; ">
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Management, modification and maintenance of databases with Microsoft SQL Server.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Find the problems in the data management of the growing company and propose solutions to the
+                                        owner of the pharmacy and the CEO (presentations in French/English).
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Apply the chosen solutions including :
+                                        <ul>
+                                            <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                                Create an application to manage the sale of drugs covered by insurance mainly using
+                                                Power Apps and Power Automate tools. The application automates the data flow and
+                                                avoids the use of unnecessary Excel files, among other things.
+                                            </li>
+                                            <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                                Automate the sending of emails to customers to obtain their information for delivery of
+                                                medicines (Power Automate).
+                                            </li>
+                                            <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                                Automation of purchase orders with Visual Basics for Application (VBA) in Excel to
+                                                temporarily replace the use of a Javascript code that was problematic in Google Sheet.
+                                            </li>
+                                        </ul>
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Documentation : UML using draw.io
+                                    </li>
+                                </ul>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-schoolProject-section" style="padding-bottom: 120px; ">
+                <div class="container">
+                    <h2 class="ds-heading"
+                        style="display: inline-block;
+                            font-weight: 700; color: #000;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 16px;
+                            border-bottom: 3px solid #F26464;
+                            padding-bottom: 7px; margin-bottom: 23px;
+                            font-family: 'Inter', sans-serif;">Projects</h2>
+                    <div class="ds-button-sec text-center">
+                        <a href="Projects.html" class="ds-button"
+                           style=" display: inline-block;
+                               text-transform: uppercase;
+                               font-size: 12px;line-height: 13px;
+                               font-weight: 600;letter-spacing: 3px;
+                               color:#F26464; padding:17px 30px;
+                               border: 2px solid #F26464;
+                               border-radius: 60px; ">See Projects</a>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="ds-PersonalAchievements-section" style="padding-bottom: 120px; ">
+                <div class="container">
+                    <h2 class="ds-heading"
+                        style="display: inline-block;
+                            font-weight: 700; color: #000;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 16px;
+                            border-bottom: 3px solid #F26464;
+                            padding-bottom: 7px; margin-bottom: 23px;
+                            font-family: 'Inter', sans-serif;">Personal Achievements</h2>
+                    <div class="row ds-experience-list" style="padding-top: 15px;">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section style="padding-right: 70px; font-family: 'Inter', sans-serif;">
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    Summer 2021
+                                </span>
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 300;">
+                                    Presentation about the engineering field to high school and Cégep youth for the
+                                    Women’s Engineering Committee of the University of Sherbrooke.
+                                    The goal of this presentation was mostly to inform and encourage the young girls
+                                    to pursue a career in a field where men are in majority.
+                                </p>
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    Summer 2018
+                                </span>
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 300;">
+                                    Exhibition of "La vague à l’âme" during the collective exhibition of "La Grande Virée
+                                    Artistique of Sherbrooke 2018".
+                                </p>
+
+                            </section>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section>
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    2017
+                                </span>
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 300;">
+                                    Public favorite award for an acrylic on canvas ("La vague à l’âme")
+                                    during the competition for the great artistic trip at Raymond Chabot Grant Thornton
+                                </p>
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    2017
+                                </span>
+                                <p style="font-size: 16px; line-height: 24px; font-weight: 300;">
+                                    Finalist artist designer of the "Imaginaire à réalité" competition of Lalita’s art Shop.
+                                </p>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-OtherExperience-section" style="padding-bottom: 120px; ">
+                <div class="container">
+                    <h2 class="ds-heading"
+                        style="display: inline-block;
+                            font-weight: 700; color: #000;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 16px;
+                            border-bottom: 3px solid #F26464;
+                            padding-bottom: 7px; margin-bottom: 23px;
+                            font-family: 'Inter', sans-serif;">Other Work Experiences</h2>
+                    <div class="row ds-experience-list" style="padding-top: 15px;">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section style="padding-right: 70px; font-family: 'Inter', sans-serif;">
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    April 2022 - August 2022
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    Terminus de Sherbrooke (Limocar/Expedibus/STS), Sherbrooke (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px;  ">
+                                    Cashier
+                                </span>
+                                <ul style="list-style: none; padding: 0; margin: 0; padding-top: 10px; ">
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Greet customers and answer the phone.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Manage parcel shipments by Expedibus.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Cash register management and selling transport tickets for Limocar as well as for the STS (Société du Transport de Sherbrooke).
+                                    </li>
+                                </ul>
+
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    September 2020 - December 2020
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    Dans un jardin, Sherbrooke (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px;  ">
+                                    Advisor and Cashier
+                                </span>
+
+                                <ul style="list-style: none; padding: 0; margin: 0; padding-top: 10px; ">
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Advise customers on the type of perfume according to their preference, personality and skin type.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Manage the cash system, receive transactions and take care of gift wrapping.
+                                    </li>
+                                </ul>
+
+                            </section>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section>
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    September 2021 - December 2021
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    La maison Simons, Sherbrooke (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px; ">
+                                    Seller and Cashier
+                                </span>
+                                <ul style="list-style: none; padding: 0; margin: 0; padding-top: 10px; ">
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Greet and guide customers.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Take care of the checkouts and fitting rooms.
+                                    </li>
+                                </ul>
+
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    July 2019 - August 2020
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    JYSK, Sherbrooke (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px; ">
+                                    Sales Colleague
+                                </span>
+                                <ul style="list-style: none; padding: 0; margin: 0; padding-top: 10px; ">
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Welcome customers, inform them of new promotions, guide them and provide them with the necessary information on the various products.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Place the new merchandise on the floor.
+                                    </li>
+                                    <li style="font-size: 16px; line-height: 24px; font-weight: 300; padding-left: 28px; position:relative; margin-bottom: 20px;">
+                                        Manage the cash system and receive transactions.
+                                    </li>
+                                </ul>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="ds-Volunteering-section" style="padding-bottom: 120px; ">
+                <div class="container">
+                    <h2 class="ds-heading"
+                        style="display: inline-block;
+                            font-weight: 700; color: #000;
+                            text-transform: uppercase;
+                            letter-spacing: 1px;
+                            font-size: 16px;
+                            border-bottom: 3px solid #F26464;
+                            padding-bottom: 7px; margin-bottom: 23px;
+                            font-family: 'Inter', sans-serif;">Volunteering</h2>
+                    <div class="row ds-experience-list" style="padding-top: 15px;">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section style="padding-right: 70px; font-family: 'Inter', sans-serif;">
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    2018
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    Association Québécoise des Jeux Mathématiques (AQJM), Sherbrooke (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px;  ">
+                                    Class Supervisor for the Math Competition
+                                </span>
+
+                            </section>
+                        </div>
+
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-xl-6 col-xxl-6">
+                            <section>
+                                <span class="ds-year" style="display: block; color: #373737; font-size: 14px; font-weight: 700; padding-bottom: 10px; ">
+                                    2014 - 2018
+                                </span>
+                                <h3 class="ds-officename" style=" font-size: 24px; font-weight: 300; margin-bottom:10px; ">
+                                    Festival des Harmonies du Québec, Sherbrooke (QC, Canada)
+                                </h3>
+                                <span class="ds-department" style="display: block;  color: #373737; font-weight: 500; font-size: 18px; padding-bottom: 30px; ">
+                                    Head Manager and Cashier for Ticket Sales
+                                </span>
+
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
             <div id="right" class="column">
 
             </div>
