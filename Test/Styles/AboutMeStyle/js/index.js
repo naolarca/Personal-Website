@@ -175,7 +175,7 @@ new Swiper(' .swiper-container', {
         width:'8px',
         height:'8px',
         border:'0px solid rgb(104, 159, 56)',
-        background:'#rgbrgb(104, 159, 56)',
+        background:'rgb(104, 159, 56)',
         top:'-4px',
         left:'-4px',
        })

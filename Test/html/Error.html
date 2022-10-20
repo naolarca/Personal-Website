@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ErrorPage</title>
+
+  <!--favicon-img-->
+  <link rel="icon" type="image/png" href="../Styles/BlogStyle/images/favicon.jpg">
+  <!--favicon-img-->
+
+  <!-- SWIPER CSS LINK -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css" integrity="sha256-DBYdrj7BxKM3slMeqBVWX2otx7x4eqoHRJCsSDJ0Nxw=" crossorigin="anonymous"/>
+  <!-- SWIPER CSS LINK -->
+
+  <!-- GSAP JS LINK -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.6/gsap.min.js"></script>
+  <!-- GSAP JS LINK -->
+
+  <!-- CSS LINK -->
+  <link rel="stylesheet" href="../Styles/BlogStyle/css/style.css">
+  <!-- CSS LINK -->
+
+  <!--Imports a model-viewer JavaScript code -->
+  <!--It helps to handle how the 3D Object would be displayed -->
+  <script type="module" src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"></script>
+  <script nomodule src="https://unpkg.com/@google/model-viewer/dist/model-viewer-legacy.js"></script>
+</head>
+<body>
+
+
+<!-- ALL CONTENTS -->
+
+<main id="all">
+
+    <!--------------- CURSOR --------------->
+    <div class="cursor"></div>
+    <div class="cursor-two"></div>
+    <!-- -------------CURSOR --------------->
+    <!--------------------- GALLERY PAGE --------------------->
+
+    <div id="gallery">
+
+        <!-- GALLERY CONTENTS -->
+
+        <div id="gallery-contents">
+
+
+            <!-- An aside -->
+            <!-- This is for holding the 3D object -->
+            <div id="aSide" style="position:absolute; left:35%; display:flex; width:700px; height:500px; flex: 0 0 auto;">
+                <!-- 3D objsect -->
+                <!-- This inserts the 3D object inside the aside container -->
+                <model-viewer class="hover" style="width:700x; height:500px; " src="../3D/ErrorGhost/scene.gltf" alt="ErrorGhost" auto-rotate camera-controls ar ios-src="../3D/ErrorGhost/scene.gltf"></model-viewer>
+            </div>
+
+
+        </div>
+
+
+        <!-- GALLERY CONTENTS --->
+
+
+    </div>
+
+    <!--------------------- HOME PAGE --------------------->
+
+
+
+
+
+</main>
+
+<!-- ALL CONTENTS -->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js" integrity="sha256-4sETKhh3aSyi6NRiA+qunPaTawqSMDQca/xLWu27Hg4=" crossorigin="anonymous"></script>
+<script src="../Styles/BlogStyle/js/jquery.min.js"></script>
+<script src="../Styles/BlogStyle/js/masonry.min.js"></script>
+<script src="../Styles/BlogStyle/js/jquery.lettering.js"></script>
+<script src="../Styles/BlogStyle/js/index.js"></script>
+
+
+</body>
+</html>

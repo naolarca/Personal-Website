@@ -364,11 +364,6 @@ li{
 
 
 
-
-
-
-
-
 /*-------------------- GALLERY PAGE CSS -------------------- */
 
 #gallery{
@@ -466,6 +461,13 @@ padding: 30px;
 
 
 
+
+
+
+
+
+
+
 /* ===-----------------------------------------------------------RESPONSIVE CSS(MOBILE DEVICES) -----------------=======---------------------------*/
 
 @media all and (max-width: 675px) and (min-width: 0px){
@@ -510,6 +512,9 @@ padding: 30px;
 
 
 
+
+
+
 /* GALLERY PAGE */
 .gallery-grid{
     width: 90%;
@@ -545,6 +550,8 @@ padding: 30px;
 
 
 
+
+
 }
 
 /* -----------------------------------------------------------RESPONSIVE CSS(MOBILE DEVICES) --------------------------------------------*/
@@ -573,6 +580,7 @@ padding: 30px;
 
 
 
+
 /* GALLERY PAGE */
 .gallery-grid{
     width: 98%;
@@ -592,6 +600,7 @@ padding: 30px;
     padding: 50px 10px 10px 10px;
 }
 /* GALLERY PAGE */
+
 
 
 }
