@@ -128,7 +128,7 @@ new Swiper(' .swiper-container', {
        gsap.to( $cursor,{
         scale:1.5,
         opacity:.4,
-        background:'rgb(255, 111, 0)',
+        background:'rgb(104, 159, 56)',
         border:'none',
         ease: Expo.easeOut,
        })
@@ -142,7 +142,7 @@ new Swiper(' .swiper-container', {
         width:'100px',
         height:'100px',
         opacity:1,
-        background:'rgb(255, 111, 0)',
+        background:'rgb(104, 159, 56)',
         border:'none',
         innerHTML:'view&nbsp;gallery',
         top:'-50px',
@@ -151,7 +151,7 @@ new Swiper(' .swiper-container', {
        gsap.to( $cursortwo,{
         width:'110px',
         height:'110px',
-        border:'2px solid #ad0961',
+        border:'2px solid rgb(104, 159, 56)',
         background:'transparent',
         top:'-55px',
         left:'-55px',
@@ -166,7 +166,7 @@ new Swiper(' .swiper-container', {
         opacity:1,
         scale:1,
         background:'transparent',
-        border:'1px solid rgb(255, 179, 0)',
+        border:'1px solid rgb(104, 159, 56)',
         innerHTML:''
        }) 
        gsap.to( $cursortwo,{
@@ -174,8 +174,8 @@ new Swiper(' .swiper-container', {
         opacity:1,
         width:'8px',
         height:'8px',
-        border:'0px solid #ad0961',
-        background:'#rgb(255, 111, 0)',
+        border:'0px solid rgb(104, 159, 56)',
+        background:'#rgbrgb(104, 159, 56)',
         top:'-4px',
         left:'-4px',
        })

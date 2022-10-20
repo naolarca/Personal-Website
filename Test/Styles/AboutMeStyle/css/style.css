@@ -50,7 +50,7 @@ html{
 body{
     width: 100%;
     height: auto;
-    background: rgb(255, 236, 179);
+    background: rgb(220, 237, 200);
     user-select: none;
     overflow-x: hidden;
     scroll-behavior: smooth;
@@ -69,13 +69,13 @@ li{
 }
 ::-webkit-scrollbar{
     width: 8px;
-    background:rgb(255, 236, 179);
+    background:rgb(220, 237, 200);
 }
 ::-webkit-scrollbar-thumb{
-    background: rgb(255, 179, 0);
+    background: rgb(104, 159, 56);
 }
 ::placeholder{
-    color: rgb(255, 179, 0);
+    color: rgb(104, 159, 56);
 }
 
 #all{
@@ -90,7 +90,7 @@ li{
     background: transparent;
     border-radius: 50%;
     pointer-events: none;
-    border: 1px solid rgb(255, 179, 0);
+    border: 1px solid rgb(104, 159, 56);
     position: fixed;
     z-index: 6;
     top: -25px;
@@ -110,7 +110,7 @@ li{
   .cursor-two{
     height: 8px;
     width: 8px;
-    background: rgb(255, 179, 0);
+    background: rgb(104, 159, 56);
     border-radius: 50%;
     pointer-events: none;
     position: fixed;
@@ -130,10 +130,10 @@ li{
       height: 100vh;
       overflow: hidden;
       position: fixed;
-      color: rgb(255, 236, 179);
+      color: rgb(220, 237, 200);
       font-size: 20px; 
       font-family: montserrat;
-      background:rgb(255, 179, 0);
+      background:rgb(104, 159, 56);
       z-index: 10;
       display: flex;
       align-items: center;
@@ -141,7 +141,7 @@ li{
   }
 
 .loader-text-stroke{
-    -webkit-text-stroke: 1px rgb(255, 236, 179);
+    -webkit-text-stroke: 1px rgb(220, 237, 200);
     color: transparent;
     position: relative;
     width: auto;
@@ -168,9 +168,9 @@ li{
     font-family: inherit;
     z-index: 5;
     font-weight: inherit;
-    color: rgb(255, 236, 179);
+    color: rgb(220, 237, 200);
     overflow: hidden;
-    -webkit-text-stroke: 0px rgb(255, 236, 179);
+    -webkit-text-stroke: 0px rgb(220, 237, 200);
     animation: loadertext 12s cubic-bezier(0.84, 0, 0.08, 0.99)  ;
     animation-iteration-count: 1;
 }
@@ -202,7 +202,7 @@ li{
       width: 100%;
       height: 100vh;
       overflow: hidden;
-      background: rgb(255, 236, 179);
+      background: rgb(220, 237, 200);
       position: fixed;
       display: none;
       z-index: 10;
@@ -245,7 +245,7 @@ li{
 
   #navigation{
       position: fixed;
-      background: rgb(255, 179, 0);
+      background: rgb(104, 159, 56);
       height: 100vh;
       width: 100%;
       display: flex;
@@ -257,7 +257,7 @@ li{
   }
 
   #navigation .logo{
-    color: rgb(255, 236, 179);
+    color: rgb(220, 237, 200);
   }
 
   .navigation-close{
@@ -272,7 +272,7 @@ li{
     height: 22px;
     width: 2px;
     border-radius: 10px;
-    background: rgb(255, 236, 179);
+    background: rgb(220, 237, 200);
     position: absolute;
     transform: rotate(-45deg);
   }
@@ -283,7 +283,7 @@ li{
       opacity: 0;
   }
   .navigation-links ul li{
-    color:rgb(255, 236, 179);
+    color:rgb(220, 237, 200);
     font-size: 50px;
     text-align: center;
     font-weight: 300;
@@ -322,7 +322,7 @@ li{
 .logo{
     font-family: montserrat;
     font-size: 18px;
-    color: rgb(255, 179, 0);
+    color: rgb(104, 159, 56);
     position: fixed;
     left: 0;
     top: 0;
@@ -340,7 +340,7 @@ li{
     padding-top: 14px;
     font-family: montserrat;
     font-size: 18px;
-    color: rgb(255, 179, 0);
+    color: rgb(104, 159, 56);
     font-weight: 700;
     display: flex;
     align-items: center;
@@ -358,105 +358,11 @@ li{
     width: 25px;
     height: 2px;
     margin: 2px;
-    background: rgb(255, 179, 0);
+    background: rgb(104, 159, 56);
 }
 /* MENUBAR */
 
 
-
-
-
-/*-------------------- ABOUT PAGE CSS -------------------- */
-
-
-#about{
-    width: 100%;
-    height: auto;
-    display: none; /*ALL THE PAGES EXCEPT HOME SHOULD BE SET TO DISPLAY NONE*/
-    background: rgb(255, 236, 179);
-    overflow: hidden;
-}
-
-.about-main-contents{
-    width: 100%;
-    height: auto;
-    min-height: 100vh;
-    display: flex;
-    padding: 20px;
-
-}
-.about-main-contents .about-info{
-    width: 45%;
-    height: auto;
-    color: rgb(255, 179, 0);
-    font-size: 18px;
-    font-family: poppins;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 20px;
-    padding-left: 0;
-    padding-top: 50px;
-    position: relative;
-}
-.about-info .heading{
-    font-size: 38px;
-    font-weight: 500;
-    padding: 20px;
-}
-.about-info .paragraph{
-    font-size: 16px;
-    padding: 20px;
-}
- .about-info .cv-button a{
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 20px;
-    margin-top: 15px;
-    font-size: 20px;
-    text-align: center;
-    border: 2px solid rgb(255, 179, 0);
-    border-radius: 4px;
-    transition: all .4s ease;
-}
- .about-info .cv-button a:hover{
-    background: rgb(255, 179, 0);
-    color: rgb(255, 236, 179);
-}
-
-
-.about-main-contents .about-image{
-    width: 55%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-.about-main-contents .about-image .about-img-container{
-    width: 450px;
-    height: 85vh;
-    position: relative;
-}
-.about-image .about-img-container img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    position: absolute;
-    transform: rotate(2deg);
-}
-.about-image .about-img-container .about-image-back{
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    left: 0;
-    top: 0;
-    background: rgb(255, 179, 0);
-    transform: rotate(-3deg);
-}
-
-
-
-/*-------------------- ABOUT PAGE CSS -------------------- */
 
 
 
@@ -469,7 +375,7 @@ li{
     width: 100%;
     height: auto;
     display: block; /*ALL THE PAGES EXCEPT HOME SHOULD BE SET TO DISPLAY NONE*/
-    background: rgb(255, 236, 179);
+    background: rgb(220, 237, 200);
     overflow: hidden;
 }
 .gallery-header-content{
@@ -479,7 +385,7 @@ li{
     justify-content: center;
     flex-direction: column;
     position: fixed;
-    background: rgb(255, 236, 179);
+    background: rgb(220, 237, 200);
     z-index: 1;
 }
 .gallery-heading{
@@ -488,7 +394,7 @@ li{
     font-size: 48px;
     font-weight: 600;
     font-family: montserrat;
-    color: rgb(255, 179, 0);
+    color: rgb(104, 159, 56);
 }
 .image-selector{
     width: 100%;
@@ -504,12 +410,12 @@ li{
     font-size: 16px;
     margin: 10px;
     font-family: poppins;
-    color: rgb(255, 179, 0);
+    color: rgb(104, 159, 56);
     transition: all .4s ease;
 }
 .image-selector .active , .image-selector a:hover{
-    background: rgb(255, 179, 0);
-    color: rgb(255, 236, 179);
+    background: rgb(104, 159, 56);
+    color: rgb(220, 237, 200);
     transition: all .4s ease;
 }
 .gallery-images-container{
@@ -560,233 +466,6 @@ padding: 30px;
 
 
 
-
-
-
-/*-------------------- SERVICES PAGE CSS -------------------- */
-
-#services{
-    width: 100%;
-    height: auto;
-    display: none; /*ALL THE PAGES EXCEPT HOME SHOULD BE SET TO DISPLAY NONE*/
-    background: #f1d4d4;
-    overflow: hidden;
-}
-.services-heading{
-    width: 100%;
-    padding: 40px;
-    text-align: center;
-    font-family: montserrat;
-    font-size: 42px;
-    color: rgb(255, 179, 0);
-    font-weight: 600;
-    z-index: 2;
-}
-.services-flex{
-    width:100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.service{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    width: 100%;
-    padding: 20px;
-    position: relative;
-}
-
-.service-img{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 50%;
-    overflow: hidden;
-}
-.service-img-main{
-    position: relative;
-    height: 500px;
-    width: 100%;
-    padding: 20px;
-}
-.service-img-main img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-.service-img-back{
-    position: absolute;
-    left: 0;
-    top:0;
-    z-index: 1;
-}
-
-.service-info{
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    padding: 30px;
-    padding-right: 0px;
-    color: rgb(255, 179, 0);
-}
-.service-type-heading{
-    font-size: 60px;
-    width: 100%;
-    font-family: orelo;
-    padding: 20px;
-    padding-right: 0px;
-}
-.service-type-para{
-    font-size: 16px;
-    font-family: poppins;
-    padding: 20px;
-    padding-top: 0px;
-}
-.service-type-number{
-    font-size: 18px;
-    font-family: poppins;
-    padding: 20px;
-    padding-bottom: 0px;
-}
-.service-type-price{
-    font-size: 18px;
-    font-family: poppins;
-    padding-top: 0px;
-    padding: 20px;
-}
-.service-type-price .highlight{
-    color: #f1d4d4;
-    background: rgb(255, 179, 0);
-    padding: 5px;
-}
-
-/*-------------------- SERVICES PAGE CSS -------------------- */
-
-
-/*--------------------  CONTACT PAGE CSS -------------------- */
-#contact{
-    width: 100%;
-    height: auto;
-    display: none; /*ALL THE PAGES EXCEPT HOME SHOULD BE SET TO DISPLAY NONE*/
-    background: #f1d4d4;
-    overflow: hidden;
-    color: rgb(255, 179, 0);
-}
-.contact-heading{
-    width: 100%;
-    text-align: center;
-    padding: 40px;
-    font-size: 40px;
-    font-family: montserrat;
-    font-weight: 600;
-}
-.contact-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    min-height: auto;
-    padding-bottom: 40px;
-}
-.contact-form-container{
-    width: 60%;
-    height: auto;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    text-align: left;
-    padding-top: 30px;
-}
-.contact-form-heading{
-    font-size: 18px;
-    font-family: poppins;
-    font-weight: 600;
-    width: 100%;
-    text-align:left;
-    padding: 20px;
-    width: auto;
-}
-form{
-    width:80%;
-    text-align: center;
-    padding-left: 40px;
-}
-input,textarea{
-    background: transparent;
-    border: none;
-    border-bottom: 1px solid rgb(255, 179, 0);
-    color: rgb(255, 179, 0);
-    margin: 20px;
-    padding: 10px 20px;
-    padding-left: 0px;
-    width: 100%;
-    font-size: 20px;
-    font-family: poppins;
-}
-textarea{
-    height: 90px;
-}
-#submit{
-    padding: 8px 30px;
-    width: auto;
-    text-align: center;
-    background: transparent;
-    border: none;
-    border: 1px solid rgb(255, 179, 0);
-    font-size: 22px;
-    color: rgb(255, 179, 0);
-    font-family: poppins;
-    transition: all .4s ease;
-}
-#submit:hover{
-    background: rgb(255, 179, 0);
-    color: #f1d4d4;
-}
-form #message {
-    opacity:0;
-    font-size: 20px;
-    padding: 10px;
-    font-family: poppins;
-}
-.contact-info{
-    width: 40%;
-    padding-top: 30px;
-    padding-left: 50px;
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    color: rgb(255, 179, 0);
-    font-family: poppins;
-    font-size: 18px;
-}
-.contact-info-content{
-    padding: 20px;
-}
-#contact .highlight{
-    padding: 0px 10px;
-    color: #f1d4d4;
-    background: rgb(255, 179, 0);
-}
-#contact .contact-info-content ul {
-    color: rgb(255, 179, 0);
-    padding-top: 10px;
-    display: flex;
-    flex-direction: row;
-}
-/* CONTACT PAGE CSS */
-
-
-
-
-
-
-
-
 /* ===-----------------------------------------------------------RESPONSIVE CSS(MOBILE DEVICES) -----------------=======---------------------------*/
 
 @media all and (max-width: 675px) and (min-width: 0px){
@@ -831,57 +510,6 @@ form #message {
 
 
 
-/* ABOUT PAGE */
-.about-main-contents{
-    flex-direction: column;
-    padding-top: 100px;
-    align-items: center;
-}
-.about-main-contents .about-info{
-    width: 100%;
-    height: auto;
-    color: rgb(255, 179, 0);
-    font-size: 18px;
-    font-family: poppins;
-    padding-left: 0px;
-    padding: 0px;
-    padding-top: 50px;
-    position: relative;
-}
-.about-info .heading{
-    font-size: 26px;
-    padding: 10px;
-}
-.about-info .paragraph{
-    font-size: 16px;
-    padding: 10px;
-
-}
-.about-main-contents .about-image{
-    width: 100%;
-}
-.about-main-contents .about-image .about-img-container{
-    width: 90%;
-    height: 400px;
-    position: relative;
-}
-.about-info .cv-button a{
-    display: inline-block;
-    padding: 10px 20px;
-    margin: 10px;
-    margin-top: 15px;
-    font-size: 18px;
-    text-align: center;
-    border: 2px solid rgb(255, 179, 0);
-    border-radius: 4px;
-    transition: all .4s ease;
-}
-
-/* ABOUT PAGE */
-
-
-
-
 /* GALLERY PAGE */
 .gallery-grid{
     width: 90%;
@@ -917,84 +545,6 @@ form #message {
 
 
 
-
-/* SERVICES PAGE */
-.service{
-    flex-direction: column;
-    width: 100%;
-    padding-top: 0px;
-    padding-bottom: 0px;
-}
-.services-heading{
-    padding: 30px;
-    padding-top: 50px;
-    font-size: 26px;
-    transition: all .5s ease;
-}
-
-.service-img{
-
-    width: 100%;
-
-}
-.service-img-main{
-    height: 300px;
-}
-
-.service-info{
-    width: 100%;
-    padding-top: 0px;
-}
-.service-type-heading{
-    font-size: 40px;
-    padding-left:0px;
-}
-.service-type-para{
-    font-size: 15px;
-    padding-left:0px;
-}
-.service-type-number{
-    font-size: 16px;
-    padding-left:0px;
-}
-.service-type-price{
-    font-size: 16px;
-    padding-left:0px;
-}
-/* SERVICES PAGE */
-
-
-/* CONTACT PAGE */
-.contact-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.contact-form-container{
-    width: 100%;
-    text-align: left;
-    padding-top: 30px;
-}
-form{
-    width:100%;
-    text-align: center;
-    padding: 30px;
-    padding-left: 0px;
-}
-.contact-heading{
-    padding-bottom: 0px;
-    font-size: 26px;
-}
-
-.contact-info{
-    width: 100%;
-    padding-top: 30px;
-    padding-left: 0px;
-}
-/* CONTACT PAGE */
-
-
 }
 
 /* -----------------------------------------------------------RESPONSIVE CSS(MOBILE DEVICES) --------------------------------------------*/
@@ -1023,38 +573,6 @@ form{
 
 
 
-/* ABOUT PAGE */
-.about-main-contents{
-    flex-direction: column;
-    padding-top: 100px;
-    align-items: center;
-}
-.about-main-contents .about-info{
-    width: 100%;
-    height: auto;
-    color: rgb(255, 179, 0);
-    font-size: 18px;
-    font-family: poppins;
-    padding-left: 20px;
-    position: relative;
-}
-.about-info .heading{
-    font-size: 32px;
-}
-.about-info .paragraph{
-    font-size: 18px;
-}
-.about-main-contents .about-image .about-img-container{
-    width: 500px;
-    height: 75vh;
-    position: relative;
-}
-
-
-/* ABOUT PAGE */
-
-
-
 /* GALLERY PAGE */
 .gallery-grid{
     width: 98%;
@@ -1075,76 +593,6 @@ form{
 }
 /* GALLERY PAGE */
 
-
-/* SERVICES PAGE */
-.service{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    width: 100%;
-    padding: 20px;
-    position: relative;
-}
-
-.service-img{
-
-    width: 100%;
-
-}
-.service-img-main{
-    height: 400px;
-}
-
-.service-info{
-    width: 100%;
-    padding-top: 0px;
-}
-.service-type-heading{
-    font-size: 40px;
-    padding-left:0px;
-}
-.service-type-para{
-    font-size: 15px;
-    padding-left:0px;
-}
-.service-type-number{
-    font-size: 16px;
-    padding-left:0px;
-}
-.service-type-price{
-    font-size: 16px;
-    padding-left:0px;
-}
-/* SERVICES PAGE */
-
-
-
-/* CONTACT PAGE */
-.contact-flex{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-}
-.contact-form-container{
-    width: 100%;
-    text-align: left;
-    padding-top: 30px;
-}
-form{
-    width:100%;
-    text-align: center;
-    padding: 30px;
-    padding-left: 0px;
-}
-
-.contact-info{
-    width: 100%;
-    padding-top: 30px;
-    padding-left: 20px;
-}
-/* CONTACT PAGE */
 
 }
 
