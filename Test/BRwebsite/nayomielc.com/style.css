@@ -1253,16 +1253,13 @@
 	opacity:0}
 
 	.innerSvg{position:absolute;
-	bottom:2%;
-	left:20%;
-	width:60%;
-	height:auto;
-	-webkit-transform:translateY(100%);
-	transform:translateY(100%);
+	bottom:-5%;
+	width:100%;
+	height:100%;
 	overflow:hidden}
 
-	.innerSvg img{-webkit-transform:translateY(-100%);
-	transform:translateY(-100%);
+	.innerSvg img{
+	width:700px;
 	opacity:0}
 
 	.amazing{position:absolute;
