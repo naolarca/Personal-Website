@@ -34,7 +34,7 @@
 	height:100vh;
 	z-index:1000;
 	display:none;
-	background:#000;
+	background:rgb(77, 0, 77);
 	color:#fff;
 	text-align:center;
 	-webkit-flex-direction:column;
@@ -204,7 +204,7 @@
 	font-family:helveticanowdisplay;
 	line-height:1.34;
 	font-size:2.52vw;
-	background:#000}
+	background:rgb(77, 0, 77)}
 
 	body.load{cursor:progress}
 
@@ -244,7 +244,7 @@
 	position:absolute;
 	top:130%;
 	left:0;
-	background:#000;
+	background:rgb(77, 0, 77);
 	-webkit-transform-origin:100% 0;
 	transform-origin:100% 0;
 	transition:.6s cubic-bezier(.73,.01,0,1)}
@@ -276,7 +276,7 @@
 	left:0;
 	width:100%;
 	height:100%;
-	background:#000}
+	background:rgb(77, 0, 77)}
 
 	.titre{font:400 normal 3.22vw/2 "HelveticaNowDisplay"}
 
@@ -339,7 +339,7 @@
 	position:absolute;
 	top:0;
 	left:0;
-	background:#000;
+	background:rgb(77, 0, 77);
 	z-index:1;
 	pointer-events:none;
 	transition-duration:1s}
@@ -353,7 +353,7 @@
 	left:0;
 	width:100%;
 	height:100%;
-	background:#000;
+	background:rgb(77, 0, 77);
 	z-index:4;
 	-webkit-transform-origin:100% 0;
 	transform-origin:100% 0}
@@ -509,7 +509,7 @@
 	.cita .content span{padding-bottom:1vw}
 
 	.cita .trait{width:var(--col);
-	background:#000;
+	background:rgb(77, 0, 77);
 	display:inline-block;
 	height:1px;
 	vertical-align:middle;
@@ -539,7 +539,7 @@
 	left:0;
 	opacity:1;
 	overflow:hidden;
-	background:#000;
+	background:rgb(77, 0, 77);
 	-webkit-transform:translate(37.5vw,-35vh) scale(.13);
 	transform:translate(37.5vw,-35vh) scale(.13)}
 
@@ -552,7 +552,7 @@
 	-webkit-transform-origin:35% 5%;
 	transform-origin:35% 5%}
 
-	.SConcert{background:#000;
+	.SConcert{background-image: linear-gradient(to top, rgb(0, 0, 128), rgb(77, 0, 77));
 	color:#fff;
 	position:relative;
 	z-index:2}
@@ -560,7 +560,7 @@
 	.SConcert::after{content:"";
 	width:100%;
 	height:3px;
-	background:#000;
+	background-image: linear-gradient(to top, rgb(0, 0, 128), rgb(77, 0, 77));
 	position:absolute;
 	top:calc(-20vh - 1px);
 	left:0}
@@ -704,13 +704,13 @@
 	height:100vh;
 	padding:10vw 0 0;
 	position:relative;
-	background:#000;
+	background-image: linear-gradient(to right, #753a88, rgb(77, 0, 77));
 	color:#fff}
 
 	.scrollHori::after{content:"";
 	width:3px;
 	height:100%;
-	background:#000;
+	background-image: linear-gradient(to right, #753a88, rgb(77, 0, 77));
 	position:absolute;
 	left:-1px;
 	top:0}
@@ -772,7 +772,7 @@
 	.SReal .wrap .mot,.SReal2 .wrap .mot{text-transform:uppercase;
 	width:100%;
 	line-height:.8;
-	font-size:14.3vw}
+	font-size:10.3vw}
 
 	.SReal .wrap .mot1,.SReal2 .wrap .mot1{-webkit-transform:translateX(20%);
 	transform:translateX(20%)}
@@ -793,7 +793,7 @@
 
 	.SReal1{margin:0 0 0 30vw}
 
-	.SReal2{background:#000;
+	.SReal2{background-image: linear-gradient(to right, #cc2b5e, #753a88);
 	overflow:hidden;
 	color:#fff;
 	z-index:2;
@@ -807,7 +807,7 @@
 	-webkit-transform:translateX(-100%);
 	transform:translateX(-100%)}
 
-	.fondNextRec{background:#000}
+	.fondNextRec{background:rgb(0, 0, 128)}
 
 	.SNextPast{color:#fff;
 	position:relative}
@@ -1437,7 +1437,7 @@
 	.SProfessor{background:#fff;
 	z-index:2;
 	position:relative;
-	border-bottom:1px solid #000;
+	border-bottom:1px solid rgb(77, 0, 77);
 	margin:0 0 -75vw!important}
 
 	.SProfessor::after{content:"";
@@ -1620,7 +1620,7 @@
 	width:130vw;
 	height:130vw;
 	border-radius:100%;
-	background:#000;
+	background:rgb(77, 0, 77);
 	-webkit-transform:translate(0%,-50%) scale(0);
 	transform:translate(0%,-50%) scale(0);
 	overflow:hidden}
@@ -1728,7 +1728,7 @@
 	.innerImgZ{width:100vw;
 	margin:0 0 0 calc(-1* var(--leftMargin));
 	height:100vh;
-	background:#000;
+	background:rgb(77, 0, 77);
 	overflow:hidden}
 
 	.innerImgZ img{width:100%;
@@ -1908,7 +1908,7 @@
 
 	.pulso #app{min-height:100vh}
 
-	.pulso #app.ticking{color:#000;
+	.pulso #app.ticking{color:rgb(77, 0, 77);
 	background:#fff}
 
 	.pulso .manual{font-size:20px;
