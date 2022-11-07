@@ -460,6 +460,11 @@
 	width:100%;
 	background:#fff}
 
+	.intro__haut{position:relative;
+    	width:100%;
+    	background:#fff}
+
+
 	.biographie{height:100vh;
 	-webkit-align-items:center;
 	align-items:center;
@@ -807,7 +812,7 @@
 	-webkit-transform:translateX(-100%);
 	transform:translateX(-100%)}
 
-	.fondNextRec{background:rgb(0, 0, 128)}
+	.fondNextRec{background:black}
 
 	.SNextPast{color:#fff;
 	position:relative}
@@ -1148,71 +1153,6 @@
 	.contenu__inner{will-change:unset}
 	}
 
-	.social{position:relative}
-	.social.bl{background:#fff}
-	.social.bl a+a::before{content:none}
-	.efface .social{opacity:0}
-
-	.social::before{content:"";
-	width:1px;
-	height:100%;
-	background:#fff;
-	position:absolute;
-	right:100%;
-	top:0}
-
-	.social a{display:block;
-	line-height:25vh;
-	width:100vw;
-	height:25vh;
-	font-size:6.3vw;
-	padding:0 0 0 16.5vw;
-	overflow:hidden;
-	position:relative}
-
-	.social a+a::before{content:"";
-	width:100%;
-	height:1px;
-	background:#fff;
-	position:absolute;
-	top:0;
-	left:0}
-
-	.social a span{display:inline-block;
-	position:relative}
-
-	.social a:nth-child(1) span{-webkit-transform:translateX(20vw);
-	transform:translateX(20vw)}
-
-	.social a:nth-child(2) span{-webkit-transform:translateX(40vw);
-	transform:translateX(40vw)}
-
-	.social a:nth-child(3) span{-webkit-transform:translateX(60vw);
-	transform:translateX(60vw)}
-
-	.social a:nth-child(4) span{-webkit-transform:translateX(80vw);
-	transform:translateX(80vw)}
-
-	.social a:nth-child(1) div{-webkit-transform:translateY(250%);
-	transform:translateY(250%)}
-
-	.social a:nth-child(2) div{-webkit-transform:translateY(200%);
-	transform:translateY(200%)}
-
-	.social a:nth-child(3) div{-webkit-transform:translateY(150%);
-	transform:translateY(150%)}
-
-	.social a:nth-child(4) div{-webkit-transform:translateY(100%);
-	transform:translateY(100%)}
-
-	.social a div{position:absolute;
-	width:100%;
-	top:0;
-	left:0%;
-	height:100%;
-	background:#fff}
-
-	.social a:hover .fl{opacity:1}
 
 	.fl{width:3vw;
 	height:auto;
@@ -1464,9 +1404,16 @@
 	color:#fff;
 	text-align:right;
 	width:100%;
-	-webkit-transform:translate(0.9vw,-1.4vw);
 	transform:translate(0.9vw,-1.4vw);
 	font-size:0}
+
+    .SProfessor h1{
+                  font-size: 72px;
+                  background: -webkit-linear-gradient(#eee, #333);
+                  -webkit-background-clip: text;
+                  -webkit-text-fill-color: transparent;
+                }
+
 
 	.SProfessor h2::before{content:"4.";
 	opacity:0;
