@@ -42,6 +42,44 @@
 </head>
 
 <body class="load">
+
+<!---BACKGROUND MUSIC--->
+<audio id="waltz" autoplay loop>
+    <source src="mp3/Dmitri Shostakovich - Waltz No. 2.mp3" type="audio/mpeg">
+</audio>
+
+<!-- MUTE CURRENT AUDIO IF IS AT SECTION-->
+<script>
+    var music = document.getElementById("waltz");
+
+        function gc_detect_visibility(query,custom_funtion){
+
+            let calculator = function(query,custom_funtion){
+
+                let element = document.querySelector(query);
+
+                let element_top_offset = element.offsetTop;
+                let element_bottom_offset = element.offsetHeight + element_top_offset;
+
+                let screen_top_offset = window.scrollY;
+                let screen_bottom_offset = screen_top_offset + window.innerHeight;
+
+                if(element_top_offset > screen_top_offset && screen_bottom_offset > element_bottom_offset){
+                    custom_funtion(element);
+                }
+            }
+
+            calculator(query,custom_funtion);
+
+            document.addEventListener('scroll',calculator.bind(null,query,custom_funtion));
+        }
+
+        gc_detect_visibility('#music-muted',function(music-muted){
+            music.muted=true;
+        });
+</script>
+
+
     <div id="inApp" class="flex">
         <div class="tit">Get the full experience in the mobile browser</div>
         <div class="instru">
@@ -80,7 +118,9 @@
 
 <header class="flex">
     <div class="nom nomL">
-        Naomie <br /><span>L'Archeveque-Carriere</span>
+        <a href="index2.html">
+            Go Back
+        </a>
     </div>
 </header>
 
@@ -121,7 +161,7 @@
                         <span>M</span><span>e</span>
                     </div>
                 </h1>
-                <div class="scroll">Scroll</div>
+                <div class="scroll">Turn up volume and scroll</div>
                 <div class="intro">
                     <picture>
                         <!--<source srcset="img/cover.webp" type="image/webp">-->
@@ -579,8 +619,12 @@
         <section class="SRec passage"></section>
         <section class="SRecording">
             <div class="contenu__inner">
-                <div class="rel">
+                <div class="rel" id="music-muted">
+
+
                     <div id="intermission">
+
+
                         <div class="inner_inter">
                             <div class="phrase">I was born in a family of artists... but mostly musicians.
                                 </br> My father was, in fact, a violinist. <span>(turn up the volume)</span></div>
@@ -602,6 +646,8 @@
                         </div>
                         <div class="continue">Or scroll to continue</div>
                     </div>
+
+
                     <h2 class="grosTitre2">
                         <span class="lArt"><span>A</span></span>
                         <span class="lArt"><span>r</span></span>

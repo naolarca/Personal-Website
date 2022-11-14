@@ -319,6 +319,16 @@
 
 	header .nom.visible{opacity:1}
 
+	header .nom3{font:500 normal 2.24vw/.97 "HelveticaNowDisplay";
+    	padding:0 0 .5vw;
+    	opacity:0;
+    	transition:.2s;
+    	cursor:pointer;
+    	pointer-events:initial;
+    	position:relative}
+
+    	header .nom3.visible{opacity:1}
+
 	.leftHead{font-size:1.4vw;
 	font-weight:500;
 	pointer-events:initial;
@@ -1841,6 +1851,7 @@
 	.pastEvents .liste .dates{border-top:0}
 
 	.pastEvents header .nom{opacity:1}
+	pastEvents header .nom3{opacity:1}
 
 	.biography .dates{padding:6vw 4vw;
 	font-size:1.5vw}
@@ -1848,6 +1859,9 @@
 	.biography .dates p+p{padding-top:1vw}
 
 	.pulso header .nom{opacity:1;
+	text-align:left}
+
+	.pulso header .nom3{opacity:1;
 	text-align:left}
 
 	.pulso{color:#fff;
